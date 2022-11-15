@@ -1,0 +1,15 @@
+#首页
+HomePage:
+  # 前置默认空格是2个,key与值之间有1个空格
+  login_btn: ["css selector", "#logininfo>a:nth-child(2)"]
+  #注册按钮
+  enroll_btn: ["css selector", "#logininfo>a:nth-child(3)"]
+
+
+
+
+LoginPage:
+  #title
+  title: ["xpath", "//title"]
+  #用户名
+  user_input: ["",""]

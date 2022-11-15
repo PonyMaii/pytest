@@ -177,6 +177,4 @@ def get_yaml(path):
     return data
 
 
-#文件问题
-import sys
-def 
+

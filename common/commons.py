@@ -31,8 +31,16 @@ def config_url(key, value):
     # 读取config.ini文件
     config.read(congfig_path(), encoding="utf-8")
     return config.get(key, value)
+HOST = config_url('Url', 'url')
+
+# 获取正确的路径
+import sys, os
+if getattr(sys, "frozen", False):
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 if __name__ == '__main__':
     print("项目路径是：" + congfig_path())
-    print("项目的url是： " + config_url('testUrl', 'url'))
+    print("项目的url是： " + config_url('Url', 'url'))
