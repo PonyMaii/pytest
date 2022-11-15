@@ -1,11 +1,11 @@
 {
-  "uid" : "f1cad93db8dbd247",
+  "uid" : "8eb5109b5c6751a6",
   "name" : "test_parpmetrize[case1]",
   "fullName" : "test.doc.test_02#test_parpmetrize",
   "historyId" : "4642bbc5dbf09bf9c16c558f938bd852",
   "time" : {
-    "start" : 1668515149140,
-    "stop" : 1668515149140,
+    "start" : 1668509541204,
+    "stop" : 1668509541204,
     "duration" : 0
   },
   "status" : "passed",
@@ -15,17 +15,17 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "aec8d72ac25f82bf",
+      "uid" : "57321021f21f3c47",
       "name" : "stdout",
-      "source" : "aec8d72ac25f82bf.txt",
+      "source" : "57321021f21f3c47.txt",
       "type" : "text/plain",
       "size" : 36
     } ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : true,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 1
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -39,7 +39,7 @@
     "value" : "xiaoma"
   }, {
     "name" : "thread",
-    "value" : "24476-MainThread"
+    "value" : "23472-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -64,14 +64,12 @@
     "value" : "'xiaoma'"
   } ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f1cad93db8dbd247.json",
+  "source" : "8eb5109b5c6751a6.json",
   "parameterValues" : [ "'登入成功'", "'123456'", "'xiaoma'" ]
 }

@@ -7,13 +7,13 @@
       "name" : "AssertionError: assert '登入成功' == '登入失败'\n  - 登入失败\n  + 登入成功",
       "children" : [ {
         "name" : "test_parpmetrize[case2]",
-        "uid" : "4072844cff2f9026",
+        "uid" : "a2ff3ad744e75428",
         "parentUid" : "91d44a6febc189ad9c7a94f701ab2e58",
         "status" : "failed",
         "time" : {
-          "start" : 1668515149187,
-          "stop" : 1668515149187,
-          "duration" : 0
+          "start" : 1668521569285,
+          "stop" : 1668521569286,
+          "duration" : 1
         },
         "flaky" : true,
         "parameters" : [ "'登入失败'", "'456789'", "'张三'" ]

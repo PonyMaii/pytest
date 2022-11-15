@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.073" timestamp="2022-11-15T20:25:49.126520" hostname="xiaoma"><testcase classname="test.doc.test_02" name="test_parpmetrize[case1]" time="0.002" /><testcase classname="test.doc.test_02" name="test_parpmetrize[case2]" time="0.004"><failure message="AssertionError: assert '登入成功' == '登入失败'&#10;  - 登入失败&#10;  + 登入成功">user = '张三', pwd = '456789', expected = '登入失败'
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.071" timestamp="2022-11-15T22:12:49.226025" hostname="xiaoma"><testcase classname="test.doc.test_02" name="test_parpmetrize[case1]" time="0.002" /><testcase classname="test.doc.test_02" name="test_parpmetrize[case2]" time="0.003"><failure message="AssertionError: assert '登入成功' == '登入失败'&#10;  - 登入失败&#10;  + 登入成功">user = '张三', pwd = '456789', expected = '登入失败'
 
     @pytest.mark.parametrize(
         "user,pwd,expected",

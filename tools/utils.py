@@ -31,12 +31,21 @@ class UtilsDriver:
     @classmethod
     def get_web_driver(cls):
         if cls._web_driver is None:
-            chrom_path = '"C:\Program Files\Google\Chrome\Application\\chrome.exe"'
-            cmd_str = chrom_path + ' --remote-debugging-port=9333 --user-data-dir="C:\selenium\ChromeProfile"'
-            run_cmd(cmd_str)
+            # chrom_path = '"C:\Program Files\Google\Chrome\Application\\chrome.exe"'
+            # cmd_str = chrom_path + ' --remote-debugging-port=9333 --user-data-dir="C:\selenium\ChromeProfile"'
+            # run_cmd(cmd_str)
+            # chrome_options = Options()
+            # chrome_options.add_experimental_option("debuggerAddress",
+            #                                        "127.0.0.1:9333")
+
             chrome_options = Options()
-            chrome_options.add_experimental_option("debuggerAddress",
-                                                   "127.0.0.1:9333")
+            chrome_options.add_argument("lang=zh_CN.UTF-8")
+            prefs = {}
+            # 设置这两个参数就可以避免密码提示框的弹出
+            prefs["credentials_enable_service"] = False
+            prefs["profile.password_manager_enabled"] = False
+            chrome_options.add_experimental_option("prefs", prefs)
+            chrome_options.add_experimental_option('excludeSwitches', ['enable-automation'])
             cls._web_driver = webdriver.Chrome(options=chrome_options)
             cls._web_driver.maximize_window()
 
@@ -166,3 +175,8 @@ def get_yaml(path):
     with open(path, 'r', encoding='UTF-8') as f:
         data = yaml.load(f.read(), Loader=yaml.FullLoader)
     return data
+
+
+#文件问题
+import sys
+def 

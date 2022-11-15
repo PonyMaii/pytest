@@ -9,11 +9,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f1cad93db8dbd247",
+      "uid" : "6f3d9fc47d2da40b",
       "status" : "passed",
       "time" : {
-        "start" : 1668515149140,
-        "stop" : 1668515149140,
+        "start" : 1668521569238,
+        "stop" : 1668521569238,
         "duration" : 0
       }
     } ]
@@ -28,13 +28,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4072844cff2f9026",
+      "uid" : "a2ff3ad744e75428",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '登入成功' == '登入失败'\n  - 登入失败\n  + 登入成功",
       "time" : {
-        "start" : 1668515149187,
-        "stop" : 1668515149187,
-        "duration" : 0
+        "start" : 1668521569285,
+        "stop" : 1668521569286,
+        "duration" : 1
       }
     } ]
   },
@@ -48,11 +48,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "115944adc95e1589",
+      "uid" : "2ad01e86c8279fdf",
       "status" : "passed",
       "time" : {
-        "start" : 1668515149192,
-        "stop" : 1668515149192,
+        "start" : 1668521569290,
+        "stop" : 1668521569290,
         "duration" : 0
       }
     } ]
@@ -67,11 +67,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "80702561c9b5e0e4",
+      "uid" : "5585ac54da642329",
       "status" : "passed",
       "time" : {
-        "start" : 1668515149195,
-        "stop" : 1668515149195,
+        "start" : 1668521569293,
+        "stop" : 1668521569293,
         "duration" : 0
       }
     } ]
@@ -86,11 +86,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a18315feace2e298",
+      "uid" : "4efd1c9626a68517",
       "status" : "passed",
       "time" : {
-        "start" : 1668515149198,
-        "stop" : 1668515149198,
+        "start" : 1668521569296,
+        "stop" : 1668521569296,
         "duration" : 0
       }
     } ]

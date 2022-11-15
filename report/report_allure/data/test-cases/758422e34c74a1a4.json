@@ -1,12 +1,12 @@
 {
-  "uid" : "a18315feace2e298",
+  "uid" : "758422e34c74a1a4",
   "name" : "test_001[001]",
   "fullName" : "test.doc.test_02#test_001",
   "historyId" : "4209e0a92b0536733b8e2fc07467b55a",
   "time" : {
-    "start" : 1668515149198,
-    "stop" : 1668515149198,
-    "duration" : 0
+    "start" : 1668509541261,
+    "stop" : 1668509541262,
+    "duration" : 1
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,17 +15,17 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "397818300c21d0f5",
+      "uid" : "59859d5da979e49c",
       "name" : "stdout",
-      "source" : "397818300c21d0f5.txt",
+      "source" : "59859d5da979e49c.txt",
       "type" : "text/plain",
       "size" : 17
     } ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : true,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 1
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -39,7 +39,7 @@
     "value" : "xiaoma"
   }, {
     "name" : "thread",
-    "value" : "24476-MainThread"
+    "value" : "23472-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -58,14 +58,12 @@
     "value" : "'001'"
   } ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a18315feace2e298.json",
+  "source" : "758422e34c74a1a4.json",
   "parameterValues" : [ "'001'" ]
 }

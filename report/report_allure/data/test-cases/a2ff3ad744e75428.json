@@ -1,12 +1,12 @@
 {
-  "uid" : "4072844cff2f9026",
+  "uid" : "a2ff3ad744e75428",
   "name" : "test_parpmetrize[case2]",
   "fullName" : "test.doc.test_02#test_parpmetrize",
   "historyId" : "ad0c2b6beee82dc7e2ce25daafe6e19f",
   "time" : {
-    "start" : 1668515149187,
-    "stop" : 1668515149187,
-    "duration" : 0
+    "start" : 1668521569285,
+    "stop" : 1668521569286,
+    "duration" : 1
   },
   "status" : "failed",
   "statusMessage" : "AssertionError: assert '登入成功' == '登入失败'\n  - 登入失败\n  + 登入成功",
@@ -19,17 +19,17 @@
     "statusTrace" : "user = '张三', pwd = '456789', expected = '登入失败'\n\n    @pytest.mark.parametrize(\n        \"user,pwd,expected\",\n        [(\"xiaoma\", \"123456\", \"登入成功\"), (\"张三\", \"456789\", \"登入失败\")],\n        ids=[\"case1\",\"case2\"]\n    )\n    def test_parpmetrize(user, pwd, expected):\n        print(f\"用户名：{user}， 密码:{pwd}\")\n>       assert \"登入成功\" == expected\nE       AssertionError: assert '登入成功' == '登入失败'\nE         - 登入失败\nE         + 登入成功\n\ntest\\doc\\test_02.py:28: AssertionError",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "b048e8bcab137551",
+      "uid" : "c523f97248a67f3c",
       "name" : "stdout",
-      "source" : "b048e8bcab137551.txt",
+      "source" : "c523f97248a67f3c.txt",
       "type" : "text/plain",
       "size" : 72
     } ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : true,
-    "shouldDisplayMessage" : true,
-    "attachmentsCount" : 1
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -43,7 +43,7 @@
     "value" : "xiaoma"
   }, {
     "name" : "thread",
-    "value" : "24476-MainThread"
+    "value" : "2432-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -73,12 +73,30 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "f4666ae2dc79cd",
+      "uid" : "6c410aa678869083",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '登入成功' == '登入失败'\n  - 登入失败\n  + 登入成功",
       "time" : {
-        "start" : 1668515149147,
-        "stop" : 1668515149148,
+        "start" : 1668521569245,
+        "stop" : 1668521569246,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b0f8ca37ff47cc37",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '登入成功' == '登入失败'\n  - 登入失败\n  + 登入成功",
+      "time" : {
+        "start" : 1668509541251,
+        "stop" : 1668509541252,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b67a7fc3f7ce624d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '登入成功' == '登入失败'\n  - 登入失败\n  + 登入成功",
+      "time" : {
+        "start" : 1668509541211,
+        "stop" : 1668509541212,
         "duration" : 1
       }
     } ],
@@ -89,6 +107,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "4072844cff2f9026.json",
+  "source" : "a2ff3ad744e75428.json",
   "parameterValues" : [ "'登入失败'", "'456789'", "'张三'" ]
 }

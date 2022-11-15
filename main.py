@@ -31,13 +31,13 @@ import pytest
 if __name__ == '__main__':
     pytest.main(["--html=./report/test_fixture.html",
                  "--junit-xml=./report/test_fixture.xml", "--reruns", "1",
-                 "--durations=10", "-vv", "test/doc/test_02.py",
-                 "--alluredir", "/report/temp_allure"])
+                 "--durations=10", "-vv", "./test/doc/test_02.py",
+                 "--alluredir", "./report/temp_allure"])
 
     """
     -s: 输出用例中所有需要打印的内容
     """
     import os
-    os.system("allure generate /report/temp_allure -o ./report/report_allure/ --clean")
+    os.system("allure generate ./report/temp_allure -o ./report/report_allure/ --clean")
     # generate 后面指的是执行收集的用例目录
     # -o 标识生成的报告放在哪个目录
