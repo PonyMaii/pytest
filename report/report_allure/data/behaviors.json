@@ -1,0 +1,65 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_parpmetrize[case1]",
+    "uid" : "f1cad93db8dbd247",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1668515149140,
+      "stop" : 1668515149140,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ "'登入成功'", "'123456'", "'xiaoma'" ]
+  }, {
+    "name" : "test_parpmetrize[case2]",
+    "uid" : "4072844cff2f9026",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1668515149187,
+      "stop" : 1668515149187,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ "'登入失败'", "'456789'", "'张三'" ]
+  }, {
+    "name" : "test_001[test001]",
+    "uid" : "115944adc95e1589",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1668515149192,
+      "stop" : 1668515149192,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ "'test001'" ]
+  }, {
+    "name" : "test_001[pwd001]",
+    "uid" : "80702561c9b5e0e4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1668515149195,
+      "stop" : 1668515149195,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ "'pwd001'" ]
+  }, {
+    "name" : "test_001[001]",
+    "uid" : "a18315feace2e298",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1668515149198,
+      "stop" : 1668515149198,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ "'001'" ]
+  } ]
+}

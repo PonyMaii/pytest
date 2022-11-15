@@ -1,0 +1,71 @@
+{
+  "uid" : "80702561c9b5e0e4",
+  "name" : "test_001[pwd001]",
+  "fullName" : "test.doc.test_02#test_001",
+  "historyId" : "43c89c93a2a805b46152998cbc7297a6",
+  "time" : {
+    "start" : 1668515149195,
+    "stop" : 1668515149195,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "51ec4922c5e557aa",
+      "name" : "stdout",
+      "source" : "51ec4922c5e557aa.txt",
+      "type" : "text/plain",
+      "size" : 20
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test.doc"
+  }, {
+    "name" : "suite",
+    "value" : "test_02"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "24476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.doc.test_02"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "user",
+    "value" : "'pwd001'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "80702561c9b5e0e4.json",
+  "parameterValues" : [ "'pwd001'" ]
+}

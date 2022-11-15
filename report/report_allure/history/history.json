@@ -1,0 +1,98 @@
+{
+  "4642bbc5dbf09bf9c16c558f938bd852" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f1cad93db8dbd247",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668515149140,
+        "stop" : 1668515149140,
+        "duration" : 0
+      }
+    } ]
+  },
+  "ad0c2b6beee82dc7e2ce25daafe6e19f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4072844cff2f9026",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '登入成功' == '登入失败'\n  - 登入失败\n  + 登入成功",
+      "time" : {
+        "start" : 1668515149187,
+        "stop" : 1668515149187,
+        "duration" : 0
+      }
+    } ]
+  },
+  "3dffc45e09809c7fe9f88981b4657524" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "115944adc95e1589",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668515149192,
+        "stop" : 1668515149192,
+        "duration" : 0
+      }
+    } ]
+  },
+  "43c89c93a2a805b46152998cbc7297a6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "80702561c9b5e0e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668515149195,
+        "stop" : 1668515149195,
+        "duration" : 0
+      }
+    } ]
+  },
+  "4209e0a92b0536733b8e2fc07467b55a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a18315feace2e298",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668515149198,
+        "stop" : 1668515149198,
+        "duration" : 0
+      }
+    } ]
+  }
+}

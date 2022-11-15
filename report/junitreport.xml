@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="6" time="0.121" timestamp="2022-11-14T16:55:09.519879" hostname="xiaoma"><testcase classname="test.test_01.Test_testxx" name="test_pr02" time="0.001" /><testcase classname="test.test_pytest.Test" name="test_baidu01" time="0.001" /><testcase classname="test.test_pytest.Test" name="test_baidu02" time="0.001" /><testcase classname="test.test_pytest" name="test_prcase1" time="0.001" /><testcase classname="test.doc.test_02" name="test_parpmetrize[case1]" time="0.001" /><testcase classname="test.doc.test_02" name="test_parpmetrize[case2]" time="0.002"><failure message="AssertionError: assert '登入成功' == '登入失败'&#10;  - 登入失败&#10;  + 登入成功">user = '张三', pwd = '456789', expected = '登入失败'
+
+    @pytest.mark.parametrize(
+        "user,pwd,expected",
+        [("xiaoma", "123456", "登入成功"), ("张三", "456789", "登入失败")],
+        ids=["case1","case2"]
+    )
+    @pytest.mark.moduName
+    def test_parpmetrize(user, pwd, expected):
+        print(f"用户名：{user}， 密码:{pwd}")
+&gt;       assert "登入成功" == expected
+E       AssertionError: assert '登入成功' == '登入失败'
+E         - 登入失败
+E         + 登入成功
+
+test\doc\test_02.py:19: AssertionError</failure></testcase></testsuite></testsuites>
