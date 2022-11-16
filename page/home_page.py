@@ -21,6 +21,8 @@ class HomePage(BasePage):
     def find_enroll_btn(self):
         return self.get_element(*self.enroll_btn)
 
+    def find_logout_btn(self):
+        return self.get_element(*self.logout_btn)
 
 class HomeHandle(BaseHandle):
 
@@ -35,6 +37,10 @@ class HomeHandle(BaseHandle):
         #点击注册按钮
         self.click(self.home_page.find_enroll_btn())
 
+    def get_logout_btn_info(self):
+        return self.get_text(self.home_page.find_logout_btn())
+
+
 
 class HomeProxy():
     def __init__(self):
@@ -43,6 +49,11 @@ class HomeProxy():
     def to_login(self):
         #进入登入页面
         self.home_handle.click_login_btn()
+
+    def get_logout(self):
+        return self.home_handle.get_logout_btn_info()
+
+
 
 
 

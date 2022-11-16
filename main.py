@@ -30,7 +30,7 @@ import pytest
 
 if __name__ == '__main__':
     pytest.main(["--html=./report/test_fixture.html",
-                 "--junit-xml=./report/test_fixture.xml", "--reruns", "1",
+                 "--junit-xml=./report/test_fixture.xml",
                  "--durations=10", "-vv",
                  "--alluredir", "./report/temp_allure"])
 

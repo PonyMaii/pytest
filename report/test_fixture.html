@@ -243,39 +243,12 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>test_fixture.html</h1>
-    <p>Report generated on 16-Nov-2022 at 02:12:35 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 16-Nov-2022 at 19:42:32 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
-        <td>BUILD_ID</td>
-        <td>1</td></tr>
-      <tr>
-        <td>BUILD_NUMBER</td>
-        <td>1</td></tr>
-      <tr>
-        <td>BUILD_TAG</td>
-        <td>jenkins-dangdang_automate-1</td></tr>
-      <tr>
-        <td>BUILD_URL</td>
-        <td><a href="http://localhost:8081/job/dangdang_automate/1/" target="_blank">http://localhost:8081/job/dangdang_automate/1/</a></td></tr>
-      <tr>
-        <td>CI</td>
-        <td>true</td></tr>
-      <tr>
-        <td>EXECUTOR_NUMBER</td>
-        <td>1</td></tr>
-      <tr>
         <td>JAVA_HOME</td>
         <td>D:\Program Files\Java\jdk1.8.0_221</td></tr>
-      <tr>
-        <td>JENKINS_URL</td>
-        <td><a href="http://localhost:8081/" target="_blank">http://localhost:8081/</a></td></tr>
-      <tr>
-        <td>JOB_NAME</td>
-        <td>dangdang_automate</td></tr>
-      <tr>
-        <td>NODE_NAME</td>
-        <td>built-in</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "1.0.0", "py": "1.11.0", "pytest": "7.1.2"}</td></tr>
@@ -287,13 +260,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>{"allure-pytest": "2.11.1", "cov": "4.0.0", "html": "3.1.1", "metadata": "2.0.1", "ordering": "0.6", "rerunfailures": "10.2", "xdist": "3.0.2"}</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.8.5</td></tr>
-      <tr>
-        <td>WORKSPACE</td>
-        <td>C:\Users\19158\.jenkins\workspace\dangdang_automate</td></tr></table>
+        <td>3.8.5</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 5.76 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>6 tests ran in 43.43 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">6 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -307,11 +277,66 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_01_login[xiaoma@126.com-123456-登出]</td>
+          <td class="col-duration">7.66</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ------------------------------Captured stdout call------------------------------ <br/>xiaoma@126.com 123456 登出
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaomazz@126.com-123456-用户名或密码错误]</td>
+          <td class="col-duration">7.58</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[-123456-请填写用户名和密码]</td>
+          <td class="col-duration">7.51</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com--请填写用户名和密码]</td>
+          <td class="col-duration">7.54</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com-12345678-用户名或密码错误]</td>
+          <td class="col-duration">7.52</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_to_login.py::Test_HomePage::test_to_login</td>
-          <td class="col-duration">5.67</td>
+          <td class="col-duration">5.48</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>用例执行开始===========&gt;
-<br/> ------------------------------Captured stdout call------------------------------ <br/>登录 - 当当网
 <br/></div></td></tr></tbody></table></body></html>

@@ -1,25 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError: assert '登入成功' == '登入失败'\n  - 登入失败\n  + 登入成功",
-      "children" : [ {
-        "name" : "test_parpmetrize[case2]",
-        "uid" : "bf0f97dc16e167b7",
-        "parentUid" : "91d44a6febc189ad9c7a94f701ab2e58",
-        "status" : "failed",
-        "time" : {
-          "start" : 1668533292618,
-          "stop" : 1668533292618,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ "'登入失败'", "'456789'", "'张三'" ]
-      } ],
-      "uid" : "91d44a6febc189ad9c7a94f701ab2e58"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }

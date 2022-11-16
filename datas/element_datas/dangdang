@@ -5,17 +5,25 @@ HomePage:
   #注册按钮
   enroll_btn: ["css selector", "#logininfo>a:nth-child(3)"]
 
+  #登出按钮
+  logout_btn: ["class name", "b"]
 
 
-
+#登入页
 LoginPage:
   #title
   title: ["xpath", "//title"]
   #用户名
-  user_input: ["css selector","#ctl00 li:nth-child(1)"]
+  user_input: ["id","txtUsername"]
   #密码
-  pwd_input: ["css selector","#ctl00 li:nth-child(2)"]
+  pwd_input: ["id","txtPassword"]
+  #登入按钮
+  enter_btn: ["id", "btnSignCheck"]
 
+  #断言登入失败响应信息
+  loginErr_info: ["id", "txtLoginErr"]
+
+#注册页面
 EnrollPage:
   #title
   title: ["xpath", "//title"]
@@ -30,3 +38,10 @@ EnrollPage:
   #验证码
   check_code_input: ["id", "txtVerifyCode"]
   #完成
+  comp_btn: ["id", "Button1"]
+
+
+  #断言验证邮箱
+  write_in: ["class name","write_in"]
+  #断言注册成功
+  login_bj: ["css selector", ".login_bj>h5"]

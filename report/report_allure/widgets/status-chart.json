@@ -1,60 +1,60 @@
 [ {
-  "uid" : "47427d51a94b629e",
-  "name" : "test_001[test001]",
+  "uid" : "d8a4411d5be61e65",
+  "name" : "test_02_login[-123456-请填写用户名和密码]",
   "time" : {
-    "start" : 1668533292629,
-    "stop" : 1668533292629,
-    "duration" : 0
+    "start" : 1668598925436,
+    "stop" : 1668598929615,
+    "duration" : 4179
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "75167a42655c2fb4",
-  "name" : "test_001[pwd001]",
+  "uid" : "4a1f312b6ff42071",
+  "name" : "test_02_login[xiaomazz@126.com-123456-用户名或密码错误]",
   "time" : {
-    "start" : 1668533292637,
-    "stop" : 1668533292637,
-    "duration" : 0
+    "start" : 1668598917842,
+    "stop" : 1668598922082,
+    "duration" : 4240
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "bf0f97dc16e167b7",
-  "name" : "test_parpmetrize[case2]",
+  "uid" : "65a8d8da86e3104d",
+  "name" : "test_02_login[xiaoma@126.com-12345678-用户名或密码错误]",
   "time" : {
-    "start" : 1668533292618,
-    "stop" : 1668533292618,
-    "duration" : 0
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "f6b53c1a5a04a682",
-  "name" : "test_parpmetrize[case1]",
-  "time" : {
-    "start" : 1668533292556,
-    "stop" : 1668533292557,
-    "duration" : 1
+    "start" : 1668598940476,
+    "stop" : 1668598944684,
+    "duration" : 4208
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "de6c651d01c59131",
+  "uid" : "8ae027f4bd34466c",
   "name" : "test_to_login",
   "time" : {
-    "start" : 1668535951177,
-    "stop" : 1668535953251,
-    "duration" : 2074
+    "start" : 1668598948095,
+    "stop" : 1668598950178,
+    "duration" : 2083
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "738be5a780d85257",
-  "name" : "test_001[001]",
+  "uid" : "8d910f9ecee8409b",
+  "name" : "test_01_login[xiaoma@126.com-123456-登出]",
   "time" : {
-    "start" : 1668533292647,
-    "stop" : 1668533292647,
-    "duration" : 0
+    "start" : 1668598910193,
+    "stop" : 1668598914493,
+    "duration" : 4300
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1cfb44899fb3a590",
+  "name" : "test_02_login[xiaoma@126.com--请填写用户名和密码]",
+  "time" : {
+    "start" : 1668598932974,
+    "stop" : 1668598937160,
+    "duration" : 4186
   },
   "status" : "passed",
   "severity" : "normal"

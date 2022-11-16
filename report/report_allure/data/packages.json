@@ -2,88 +2,88 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "test",
+    "name" : "test.test_web",
     "children" : [ {
-      "name" : "doc.test_02",
+      "name" : "test_login",
       "children" : [ {
-        "name" : "test_parpmetrize[case1]",
-        "uid" : "f6b53c1a5a04a682",
-        "parentUid" : "1b3ffaf84c1f16687ca9c4842ed2a58a",
+        "name" : "test_01_login[xiaoma@126.com-123456-登出]",
+        "uid" : "8d910f9ecee8409b",
+        "parentUid" : "44dc9fd8762ae5fb551a27165034d2e1",
         "status" : "passed",
         "time" : {
-          "start" : 1668533292556,
-          "stop" : 1668533292557,
-          "duration" : 1
+          "start" : 1668598910193,
+          "stop" : 1668598914493,
+          "duration" : 4300
         },
         "flaky" : false,
-        "parameters" : [ "'登入成功'", "'123456'", "'xiaoma'" ]
+        "parameters" : [ "'登出'", "123456", "'xiaoma@126.com'" ]
       }, {
-        "name" : "test_parpmetrize[case2]",
-        "uid" : "bf0f97dc16e167b7",
-        "parentUid" : "1b3ffaf84c1f16687ca9c4842ed2a58a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1668533292618,
-          "stop" : 1668533292618,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ "'登入失败'", "'456789'", "'张三'" ]
-      }, {
-        "name" : "test_001[test001]",
-        "uid" : "47427d51a94b629e",
-        "parentUid" : "1b3ffaf84c1f16687ca9c4842ed2a58a",
+        "name" : "test_02_login[xiaomazz@126.com-123456-用户名或密码错误]",
+        "uid" : "4a1f312b6ff42071",
+        "parentUid" : "44dc9fd8762ae5fb551a27165034d2e1",
         "status" : "passed",
         "time" : {
-          "start" : 1668533292629,
-          "stop" : 1668533292629,
-          "duration" : 0
+          "start" : 1668598917842,
+          "stop" : 1668598922082,
+          "duration" : 4240
         },
         "flaky" : false,
-        "parameters" : [ "'test001'" ]
+        "parameters" : [ "'用户名或密码错误'", "123456", "'xiaomazz@126.com'" ]
       }, {
-        "name" : "test_001[pwd001]",
-        "uid" : "75167a42655c2fb4",
-        "parentUid" : "1b3ffaf84c1f16687ca9c4842ed2a58a",
+        "name" : "test_02_login[-123456-请填写用户名和密码]",
+        "uid" : "d8a4411d5be61e65",
+        "parentUid" : "44dc9fd8762ae5fb551a27165034d2e1",
         "status" : "passed",
         "time" : {
-          "start" : 1668533292637,
-          "stop" : 1668533292637,
-          "duration" : 0
+          "start" : 1668598925436,
+          "stop" : 1668598929615,
+          "duration" : 4179
         },
         "flaky" : false,
-        "parameters" : [ "'pwd001'" ]
+        "parameters" : [ "'请填写用户名和密码'", "123456", "''" ]
       }, {
-        "name" : "test_001[001]",
-        "uid" : "738be5a780d85257",
-        "parentUid" : "1b3ffaf84c1f16687ca9c4842ed2a58a",
+        "name" : "test_02_login[xiaoma@126.com--请填写用户名和密码]",
+        "uid" : "1cfb44899fb3a590",
+        "parentUid" : "44dc9fd8762ae5fb551a27165034d2e1",
         "status" : "passed",
         "time" : {
-          "start" : 1668533292647,
-          "stop" : 1668533292647,
-          "duration" : 0
+          "start" : 1668598932974,
+          "stop" : 1668598937160,
+          "duration" : 4186
         },
         "flaky" : false,
-        "parameters" : [ "'001'" ]
+        "parameters" : [ "'请填写用户名和密码'", "''", "'xiaoma@126.com'" ]
+      }, {
+        "name" : "test_02_login[xiaoma@126.com-12345678-用户名或密码错误]",
+        "uid" : "65a8d8da86e3104d",
+        "parentUid" : "44dc9fd8762ae5fb551a27165034d2e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1668598940476,
+          "stop" : 1668598944684,
+          "duration" : 4208
+        },
+        "flaky" : false,
+        "parameters" : [ "'用户名或密码错误'", "12345678", "'xiaoma@126.com'" ]
       } ],
-      "uid" : "doc.test_02"
+      "uid" : "44dc9fd8762ae5fb551a27165034d2e1"
     }, {
-      "name" : "test_web.test_to_login",
+      "name" : "test_to_login",
       "children" : [ {
         "name" : "test_to_login",
-        "uid" : "de6c651d01c59131",
+        "uid" : "8ae027f4bd34466c",
         "parentUid" : "fcef98c161c9cb10b2f9a28c01ab476a",
         "status" : "passed",
         "time" : {
-          "start" : 1668535951177,
-          "stop" : 1668535953251,
-          "duration" : 2074
+          "start" : 1668598948095,
+          "stop" : 1668598950178,
+          "duration" : 2083
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "test_web.test_to_login"
+      "uid" : "fcef98c161c9cb10b2f9a28c01ab476a"
     } ],
-    "uid" : "d662795e8d349f9b5595bf62f43ea7ae"
+    "uid" : "test.test_web"
   } ]
 }

@@ -10,7 +10,7 @@
 from page.home_page import HomeProxy
 from page.login_page import LoginProxy
 from tools.utils import UtilsDriver
-
+import time
 
 class Test_HomePage:
 
@@ -22,6 +22,7 @@ class Test_HomePage:
 
     def test_to_login(self):
         self.home_proxy.to_login()
+        time.sleep(2)
         login_page_title = self.login_proxy.get_title()
         assert login_page_title == "登录 - 当当网"
 

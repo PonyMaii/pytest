@@ -21,7 +21,6 @@ class UtilsDriver:
     _web_driver = None  # 表示的是浏览器驱动
     _app_driver = None  # 表示的是app的驱动
 
-
     # 定义修改私有属性的方法
     @classmethod
     def set_quit_driver(cls, mark):
@@ -40,6 +39,7 @@ class UtilsDriver:
 
             chrome_options = Options()
             chrome_options.add_argument("lang=zh_CN.UTF-8")
+            chrome_options.add_argument('--headless')
             prefs = {}
             # 设置这两个参数就可以避免密码提示框的弹出
             prefs["credentials_enable_service"] = False
@@ -123,19 +123,6 @@ def app_swipe_find(driver, element, target_ele):
             return False
 
 
-# 封装获取测试数据的方法
-def get_case_data(filename):
-    with open(filename, encoding='utf-8') as f:
-        case = json.load(f)
-    list_case_data = []
-    for case_data in case.values():
-        list_case_data.append(tuple(case_data.values()))
-    return list_case_data
-
-
-
-
-
 
 
 def run_cmd(cmd_str='',  echo_print=1):
@@ -177,4 +164,12 @@ def get_yaml(path):
     return data
 
 
+
+# 封装获取测试数据的方法
+def get_case_data(filename):
+    testcase = get_yaml(filename)
+    for key in testcase:
+        for i in range(len(testcase[key])):
+            testcase[key][i] = tuple(testcase[key][i].values())
+    return testcase
 
