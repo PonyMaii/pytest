@@ -1,5 +1,5 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
     "uid" : "69f75fd36126e90e7b612cbb723132dd",
     "name" : "test.doc",
@@ -10,6 +10,17 @@
       "passed" : 4,
       "unknown" : 0,
       "total" : 5
+    }
+  }, {
+    "uid" : "bd2dfbde2d5e4fce33c919d52e276ba5",
+    "name" : "test.test_web",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }

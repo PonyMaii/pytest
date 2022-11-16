@@ -1,0 +1,103 @@
+{
+  "uid" : "51123c93c57e77",
+  "name" : "test_to_login",
+  "fullName" : "test.test_web.test_to_login.Test_HomePage#test_to_login",
+  "historyId" : "12ec9096dc2532553bb49276bea8f21d",
+  "time" : {
+    "start" : 1668533478469,
+    "stop" : 1668533478522,
+    "duration" : 53
+  },
+  "status" : "broken",
+  "statusMessage" : "RecursionError: maximum recursion depth exceeded",
+  "statusTrace" : "self = <test.test_web.test_to_login.Test_HomePage object at 0x00000154056ACA60>\n\n    def test_to_login(self):\n        self.home_proxy.to_login()\n>       login_page_title = self.login_proxy.get_title()\n\ntest\\test_web\\test_to_login.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npage\\login_page.py:33: in get_title\n    return self.login_handle.get_title_info()\npage\\login_page.py:26: in get_title_info\n    return self.get_text(self.get_title_info())\npage\\login_page.py:26: in get_title_info\n    return self.get_text(self.get_title_info())\nE   RecursionError: maximum recursion depth exceeded\n!!! Recursion detected (same locals & position)",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_Test_HomePage",
+    "time" : {
+      "start" : 1668533478374,
+      "stop" : 1668533478469,
+      "duration" : 95
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "RecursionError: maximum recursion depth exceeded",
+    "statusTrace" : "self = <test.test_web.test_to_login.Test_HomePage object at 0x00000154056ACA60>\n\n    def test_to_login(self):\n        self.home_proxy.to_login()\n>       login_page_title = self.login_proxy.get_title()\n\ntest\\test_web\\test_to_login.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npage\\login_page.py:33: in get_title\n    return self.login_handle.get_title_info()\npage\\login_page.py:26: in get_title_info\n    return self.get_text(self.get_title_info())\npage\\login_page.py:26: in get_title_info\n    return self.get_text(self.get_title_info())\nE   RecursionError: maximum recursion depth exceeded\n!!! Recursion detected (same locals & position)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7e715db6da8e04c3",
+      "name" : "stdout",
+      "source" : "7e715db6da8e04c3.txt",
+      "type" : "text/plain",
+      "size" : 62
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_Test_HomePage::0",
+    "time" : {
+      "start" : 1668533478526,
+      "stop" : 1668533478526,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_to_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_HomePage"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "7724-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_to_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "51123c93c57e77.json",
+  "parameterValues" : [ ]
+}

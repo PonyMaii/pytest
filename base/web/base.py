@@ -42,4 +42,4 @@ class BaseHandle:
         element.click()
 
     def get_text(self, element):
-        return element.text
+        return element.get_attribute("textContent")

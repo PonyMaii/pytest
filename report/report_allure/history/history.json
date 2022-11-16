@@ -9,12 +9,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6f3d9fc47d2da40b",
+      "uid" : "f6b53c1a5a04a682",
       "status" : "passed",
       "time" : {
-        "start" : 1668521569238,
-        "stop" : 1668521569238,
-        "duration" : 0
+        "start" : 1668533292556,
+        "stop" : 1668533292557,
+        "duration" : 1
+      }
+    } ]
+  },
+  "12ec9096dc2532553bb49276bea8f21d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de6c651d01c59131",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668535951177,
+        "stop" : 1668535953251,
+        "duration" : 2074
       }
     } ]
   },
@@ -28,31 +47,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a2ff3ad744e75428",
+      "uid" : "bf0f97dc16e167b7",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '登入成功' == '登入失败'\n  - 登入失败\n  + 登入成功",
       "time" : {
-        "start" : 1668521569285,
-        "stop" : 1668521569286,
-        "duration" : 1
-      }
-    } ]
-  },
-  "3dffc45e09809c7fe9f88981b4657524" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "2ad01e86c8279fdf",
-      "status" : "passed",
-      "time" : {
-        "start" : 1668521569290,
-        "stop" : 1668521569290,
+        "start" : 1668533292618,
+        "stop" : 1668533292618,
         "duration" : 0
       }
     } ]
@@ -67,11 +67,30 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5585ac54da642329",
+      "uid" : "75167a42655c2fb4",
       "status" : "passed",
       "time" : {
-        "start" : 1668521569293,
-        "stop" : 1668521569293,
+        "start" : 1668533292637,
+        "stop" : 1668533292637,
+        "duration" : 0
+      }
+    } ]
+  },
+  "3dffc45e09809c7fe9f88981b4657524" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "47427d51a94b629e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668533292629,
+        "stop" : 1668533292629,
         "duration" : 0
       }
     } ]
@@ -86,11 +105,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4efd1c9626a68517",
+      "uid" : "738be5a780d85257",
       "status" : "passed",
       "time" : {
-        "start" : 1668521569296,
-        "stop" : 1668521569296,
+        "start" : 1668533292647,
+        "stop" : 1668533292647,
         "duration" : 0
       }
     } ]

@@ -12,4 +12,21 @@ LoginPage:
   #title
   title: ["xpath", "//title"]
   #用户名
-  user_input: ["",""]
+  user_input: ["css selector","#ctl00 li:nth-child(1)"]
+  #密码
+  pwd_input: ["css selector","#ctl00 li:nth-child(2)"]
+
+EnrollPage:
+  #title
+  title: ["xpath", "//title"]
+  #email
+  email_input: ["id", "txtEmail"]
+  #nikename
+  nikename_input: ["id", "txtNickName"]
+  #设置密码
+  pwd_input: ["id", "txtPassword"]
+  #确认密码
+  repwd_input: ["id", "txtRepeatPass"]
+  #验证码
+  check_code_input: ["id", "txtVerifyCode"]
+  #完成

@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.071" timestamp="2022-11-15T22:12:49.226025" hostname="xiaoma"><testcase classname="test.doc.test_02" name="test_parpmetrize[case1]" time="0.002" /><testcase classname="test.doc.test_02" name="test_parpmetrize[case2]" time="0.003"><failure message="AssertionError: assert '登入成功' == '登入失败'&#10;  - 登入失败&#10;  + 登入成功">user = '张三', pwd = '456789', expected = '登入失败'
-
-    @pytest.mark.parametrize(
-        "user,pwd,expected",
-        [("xiaoma", "123456", "登入成功"), ("张三", "456789", "登入失败")],
-        ids=["case1","case2"]
-    )
-    def test_parpmetrize(user, pwd, expected):
-        print(f"用户名：{user}， 密码:{pwd}")
-&gt;       assert "登入成功" == expected
-E       AssertionError: assert '登入成功' == '登入失败'
-E         - 登入失败
-E         + 登入成功
-
-test\doc\test_02.py:28: AssertionError</failure></testcase><testcase classname="test.doc.test_02" name="test_001[test001]" time="0.001" /><testcase classname="test.doc.test_02" name="test_001[pwd001]" time="0.001" /><testcase classname="test.doc.test_02" name="test_001[001]" time="0.001" /></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="5.763" timestamp="2022-11-16T02:12:29.621286" hostname="xiaoma"><testcase classname="test.test_web.test_to_login.Test_HomePage" name="test_to_login" time="5.673" /></testsuite></testsuites>

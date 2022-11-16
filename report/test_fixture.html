@@ -243,21 +243,21 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>test_fixture.html</h1>
-    <p>Report generated on 15-Nov-2022 at 22:12:49 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 16-Nov-2022 at 02:12:35 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>BUILD_ID</td>
-        <td>9</td></tr>
+        <td>1</td></tr>
       <tr>
         <td>BUILD_NUMBER</td>
-        <td>9</td></tr>
+        <td>1</td></tr>
       <tr>
         <td>BUILD_TAG</td>
-        <td>jenkins-dangdang_automate-9</td></tr>
+        <td>jenkins-dangdang_automate-1</td></tr>
       <tr>
         <td>BUILD_URL</td>
-        <td><a href="http://localhost:8081/job/dangdang_automate/9/" target="_blank">http://localhost:8081/job/dangdang_automate/9/</a></td></tr>
+        <td><a href="http://localhost:8081/job/dangdang_automate/1/" target="_blank">http://localhost:8081/job/dangdang_automate/1/</a></td></tr>
       <tr>
         <td>CI</td>
         <td>true</td></tr>
@@ -292,8 +292,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>WORKSPACE</td>
         <td>C:\Users\19158\.jenkins\workspace\dangdang_automate</td></tr></table>
     <h2>Summary</h2>
-    <p>5 tests ran in 0.07 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">1 rerun</span>
+    <p>1 tests ran in 5.76 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -304,64 +304,14 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test/doc/test_02.py::test_parpmetrize[case2]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">user = &#x27;张三&#x27;, pwd = &#x27;456789&#x27;, expected = &#x27;登入失败&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &quot;user,pwd,expected&quot;,<br/>        [(&quot;xiaoma&quot;, &quot;123456&quot;, &quot;登入成功&quot;), (&quot;张三&quot;, &quot;456789&quot;, &quot;登入失败&quot;)],<br/>        ids=[&quot;case1&quot;,&quot;case2&quot;]<br/>    )<br/>    def test_parpmetrize(user, pwd, expected):<br/>        print(f&quot;用户名：{user}， 密码:{pwd}&quot;)<br/>&gt;       assert &quot;登入成功&quot; == expected<br/><span class="error">E       AssertionError: assert &#x27;登入成功&#x27; == &#x27;登入失败&#x27;</span><br/><span class="error">E         - 登入失败</span><br/><span class="error">E         + 登入成功</span><br/><br/>test\doc\test_02.py:28: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>用户名：张三， 密码:456789
-<br/> ------------------------------Captured stdout call------------------------------ <br/>用户名：张三， 密码:456789
-<br/></div></td></tr></tbody>
-      <tbody class="rerun results-table-row">
-        <tr>
-          <td class="col-result">Rerun</td>
-          <td class="col-name">test/doc/test_02.py::test_parpmetrize[case2]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">user = &#x27;张三&#x27;, pwd = &#x27;456789&#x27;, expected = &#x27;登入失败&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &quot;user,pwd,expected&quot;,<br/>        [(&quot;xiaoma&quot;, &quot;123456&quot;, &quot;登入成功&quot;), (&quot;张三&quot;, &quot;456789&quot;, &quot;登入失败&quot;)],<br/>        ids=[&quot;case1&quot;,&quot;case2&quot;]<br/>    )<br/>    def test_parpmetrize(user, pwd, expected):<br/>        print(f&quot;用户名：{user}， 密码:{pwd}&quot;)<br/>&gt;       assert &quot;登入成功&quot; == expected<br/><span class="error">E       AssertionError: assert &#x27;登入成功&#x27; == &#x27;登入失败&#x27;</span><br/><span class="error">E         - 登入失败</span><br/><span class="error">E         + 登入成功</span><br/><br/>test\doc\test_02.py:28: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>用户名：张三， 密码:456789
-<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test/doc/test_02.py::test_parpmetrize[case1]</td>
-          <td class="col-duration">0.00</td>
+          <td class="col-name">test/test_web/test_to_login.py::Test_HomePage::test_to_login</td>
+          <td class="col-duration">5.67</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>用户名：xiaoma， 密码:123456
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/doc/test_02.py::test_001[test001]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>002用户名:test001
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/doc/test_02.py::test_001[pwd001]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>002用户名:pwd001
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/doc/test_02.py::test_001[001]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>002用户名:001
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>用例执行开始===========&gt;
+<br/> ------------------------------Captured stdout call------------------------------ <br/>登录 - 当当网
 <br/></div></td></tr></tbody></table></body></html>
