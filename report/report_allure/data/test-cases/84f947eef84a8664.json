@@ -1,28 +1,28 @@
 {
-  "uid" : "4a1f312b6ff42071",
-  "name" : "test_02_login[xiaomazz@126.com-123456-用户名或密码错误]",
+  "uid" : "84f947eef84a8664",
+  "name" : "test_02_login[-123456-请填写用户名和密码]",
   "fullName" : "test.test_web.test_login.Test_Login#test_02_login",
-  "historyId" : "a2487dc59ebb75a75460ed753b80aa8d",
+  "historyId" : "54ce729cd6ffccd7f9f36752434f4762",
   "time" : {
-    "start" : 1668598917842,
-    "stop" : 1668598922082,
-    "duration" : 4240
+    "start" : 1668598925436,
+    "stop" : 1668598929615,
+    "duration" : 4179
   },
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
     "name" : "_xunit_setup_method_fixture_Test_Login",
     "time" : {
-      "start" : 1668598916606,
-      "stop" : 1668598917841,
-      "duration" : 1235
+      "start" : 1668598924192,
+      "stop" : 1668598925436,
+      "duration" : 1244
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
     "stepsCount" : 0,
     "hasContent" : false
   } ],
@@ -30,31 +30,31 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "5f52199228527e53",
+      "uid" : "6f8871029e5edc9b",
       "name" : "stdout",
-      "source" : "5f52199228527e53.txt",
+      "source" : "6f8871029e5edc9b.txt",
       "type" : "text/plain",
       "size" : 78
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
     "stepsCount" : 0,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "_xunit_setup_method_fixture_Test_Login::0",
     "time" : {
-      "start" : 1668598922084,
-      "stop" : 1668598924190,
-      "duration" : 2106
+      "start" : 1668598929616,
+      "stop" : 1668598931702,
+      "duration" : 2086
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
     "stepsCount" : 0,
     "hasContent" : false
   } ],
@@ -88,23 +88,21 @@
   } ],
   "parameters" : [ {
     "name" : "expected",
-    "value" : "'用户名或密码错误'"
+    "value" : "'请填写用户名和密码'"
   }, {
     "name" : "password",
     "value" : "123456"
   }, {
     "name" : "username",
-    "value" : "'xiaomazz@126.com'"
+    "value" : "''"
   } ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "4a1f312b6ff42071.json",
-  "parameterValues" : [ "'用户名或密码错误'", "123456", "'xiaomazz@126.com'" ]
+  "source" : "84f947eef84a8664.json",
+  "parameterValues" : [ "'请填写用户名和密码'", "123456", "''" ]
 }

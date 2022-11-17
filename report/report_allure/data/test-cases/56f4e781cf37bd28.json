@@ -1,28 +1,28 @@
 {
-  "uid" : "8ae027f4bd34466c",
-  "name" : "test_to_login",
-  "fullName" : "test.test_web.test_to_login.Test_HomePage#test_to_login",
-  "historyId" : "12ec9096dc2532553bb49276bea8f21d",
+  "uid" : "56f4e781cf37bd28",
+  "name" : "test_02_login[xiaoma@126.com-12345678-用户名或密码错误]",
+  "fullName" : "test.test_web.test_login.Test_Login#test_02_login",
+  "historyId" : "7723dcf02c9d29bb9e36f44ad663994a",
   "time" : {
-    "start" : 1668598948095,
-    "stop" : 1668598950178,
-    "duration" : 2083
+    "start" : 1668598940476,
+    "stop" : 1668598944684,
+    "duration" : 4208
   },
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
-    "name" : "_xunit_setup_class_fixture_Test_HomePage",
+    "name" : "_xunit_setup_method_fixture_Test_Login",
     "time" : {
-      "start" : 1668598946787,
-      "stop" : 1668598948094,
-      "duration" : 1307
+      "start" : 1668598939257,
+      "stop" : 1668598940475,
+      "duration" : 1218
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
     "stepsCount" : 0,
     "hasContent" : false
   } ],
@@ -30,31 +30,31 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "4bd685beff74d7f9",
+      "uid" : "f71a9f02bf36ced7",
       "name" : "stdout",
-      "source" : "4bd685beff74d7f9.txt",
+      "source" : "f71a9f02bf36ced7.txt",
       "type" : "text/plain",
-      "size" : 31
+      "size" : 78
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
     "stepsCount" : 0,
     "hasContent" : true
   },
   "afterStages" : [ {
-    "name" : "_xunit_setup_class_fixture_Test_HomePage::0",
+    "name" : "_xunit_setup_method_fixture_Test_Login::0",
     "time" : {
-      "start" : 1668598950178,
-      "stop" : 1668598952272,
-      "duration" : 2094
+      "start" : 1668598944686,
+      "stop" : 1668598946782,
+      "duration" : 2096
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
     "stepsCount" : 0,
     "hasContent" : false
   } ],
@@ -63,10 +63,10 @@
     "value" : "test.test_web"
   }, {
     "name" : "suite",
-    "value" : "test_to_login"
+    "value" : "test_login"
   }, {
     "name" : "subSuite",
-    "value" : "Test_HomePage"
+    "value" : "Test_Login"
   }, {
     "name" : "host",
     "value" : "xiaoma"
@@ -81,21 +81,28 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "test.test_web.test_to_login"
+    "value" : "test.test_web.test_login"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "'用户名或密码错误'"
+  }, {
+    "name" : "password",
+    "value" : "12345678"
+  }, {
+    "name" : "username",
+    "value" : "'xiaoma@126.com'"
+  } ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "8ae027f4bd34466c.json",
-  "parameterValues" : [ ]
+  "source" : "56f4e781cf37bd28.json",
+  "parameterValues" : [ "'用户名或密码错误'", "12345678", "'xiaoma@126.com'" ]
 }

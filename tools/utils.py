@@ -15,16 +15,17 @@ import re
 from selenium import webdriver
 from appium import webdriver as app_driver
 from selenium.webdriver.chrome.options import Options
-
+import uiautomator2 as u2
 
 class UtilsDriver:
-    _web_driver = None  # 表示的是浏览器驱动
+    _web_driver = None  # 表示的是浏览器webdriver驱动
     _app_driver = None  # 表示的是app的驱动
+    _app_device = None  # uiautomator2对象
 
     # 定义修改私有属性的方法
     @classmethod
     def set_quit_driver(cls, mark):
-        cls._web_driver, cls._web_driver = mark
+        cls._web_driver, cls._app_driver, cls._app_device = mark
 
     # 定义获取浏览器驱动
     @classmethod
@@ -87,6 +88,24 @@ class UtilsDriver:
         if cls._app_driver is not None:
             cls.get_app_driver().quit()
             cls._app_driver = None
+
+    #定义uiautomator2获取app驱动的方法
+    @classmethod
+    def get_ui2_device(cls):
+        if cls._app_device is None:
+            devices_name = "包名"
+            cls._app_device = u2.connect(devices_name)
+        return cls._app_device
+
+    #定义uiautomator2退出app驱动的方法
+    @classmethod
+    def quit_ui2_device(cls, clear_cache=False):
+        if cls._app_device is not None:
+            package_name = "包名"
+            cls.get_ui2_device().app_stop(package_name)
+            if clear_cache:
+                cls.get_ui2_device().app_clear(package_name)
+            cls._app_device = None
 
 
 
