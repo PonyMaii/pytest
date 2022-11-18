@@ -1,0 +1,125 @@
+{
+  "uid" : "faf662850c653921",
+  "name" : "test_to_login",
+  "fullName" : "test.test_web.test_to_login.Test_HomePage#test_to_login",
+  "historyId" : "12ec9096dc2532553bb49276bea8f21d",
+  "time" : {
+    "start" : 1668756796521,
+    "stop" : 1668756798586,
+    "duration" : 2065
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_Test_HomePage",
+    "time" : {
+      "start" : 1668756795319,
+      "stop" : 1668756796521,
+      "duration" : 1202
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "97290f003b8b61f9",
+      "name" : "stdout",
+      "source" : "97290f003b8b61f9.txt",
+      "type" : "text/plain",
+      "size" : 31
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_Test_HomePage::0",
+    "time" : {
+      "start" : 1668756798587,
+      "stop" : 1668756801628,
+      "duration" : 3041
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_to_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_HomePage"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "10860-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_to_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "762ee1a2db8e7eec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668756616236,
+        "stop" : 1668756618335,
+        "duration" : 2099
+      }
+    }, {
+      "uid" : "1b5fa7c6cee47f57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668672155295,
+        "stop" : 1668672157363,
+        "duration" : 2068
+      }
+    }, {
+      "uid" : "c6bed794befc63de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668598948095,
+        "stop" : 1668598950178,
+        "duration" : 2083
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "faf662850c653921.json",
+  "parameterValues" : [ ]
+}

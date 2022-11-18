@@ -17,15 +17,27 @@ from appium import webdriver as app_driver
 from selenium.webdriver.chrome.options import Options
 import uiautomator2 as u2
 
+
+
+def get_BASE_DIR():
+    import sys, os
+    if getattr(sys, "frozen", False):
+        BASE_DIR = os.path.dirname(sys.executable)
+    else:
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    return BASE_DIR
+
+
+
 class UtilsDriver:
     _web_driver = None  # 表示的是浏览器webdriver驱动
     _app_driver = None  # 表示的是app的驱动
-    _app_device = None  # uiautomator2对象
+
 
     # 定义修改私有属性的方法
     @classmethod
     def set_quit_driver(cls, mark):
-        cls._web_driver, cls._app_driver, cls._app_device = mark
+        cls._web_driver, cls._app_driver = mark
 
     # 定义获取浏览器驱动
     @classmethod
@@ -88,6 +100,15 @@ class UtilsDriver:
         if cls._app_driver is not None:
             cls.get_app_driver().quit()
             cls._app_driver = None
+
+
+class UtilsDevice:
+    _app_device = None  # uiautomator2对象
+
+    # 定义修改私有属性的方法
+    @classmethod
+    def set_quit_driver(cls, mark):
+        cls._app_device = mark
 
     #定义uiautomator2获取app驱动的方法
     @classmethod
