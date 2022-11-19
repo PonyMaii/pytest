@@ -1,0 +1,103 @@
+p_example:
+  - #正常注册账号
+    email: 1915856663@qq.com
+    nikename: liaoyudong
+    pwd: 123456
+    repwd: 123456
+    check_code: 1234
+    expected1: 输入您收到邮件中的验证码：
+    expected2: 欢迎加入当当网
+
+
+email_err_example:
+  - #账号为空
+    email: ""
+    nikename: liaoyudong
+    pwd: 123456
+    repwd: 123456
+    check_code: 1234
+    expected: Email不能为空
+
+  - #账号已存在
+    email: xiaoma@126.com
+    nikename: liaoyudong
+    pwd: 123456
+    repwd: 123456
+    check_code: 1234
+    expected: Email已存在
+
+  - #格式不正确01
+    email: xiaoma
+    nikename: liaoyudong
+    pwd: 123456
+    repwd: 123456
+    check_code: 1234
+    expected: Email格式不正确
+
+  - #格式不正确02
+    email: "@#@"
+    nikename: liaoyudong
+    pwd: 123456
+    repwd: 123456
+    check_code: 1234
+    expected: Email格式不正确
+
+nikename_err_example:
+  - #名称为空
+    email: 1915856663@qq.com
+    nikename: ""
+    pwd: 123456
+    repwd: 123456
+    check_code: 1234
+    expected: 昵称不能为空
+
+  - #名称格式太短
+    email: 1915856663@qq.com
+    nikename: 123
+    pwd: 123456
+    repwd: 123456
+    check_code: 1234
+    expected: 昵称格式不正确
+
+  - #名称太长
+    email: 1915856663@qq.com
+    nikename: 123456789112345678911
+    pwd: 123456
+    repwd: 123456
+    check_code: 1234
+    expected: 昵称格式不正确
+
+pwd_err_example:
+  - #密码为空
+    email: 1915856663@qq.com
+    nikename: 1234
+    pwd: ""
+    repwd: 123456
+    check_code: 1234
+    expected: 密码不能为空
+
+  - #密码格式太短
+    email: 1915856663@qq.com
+    nikename: 1234
+    pwd: 12345
+    repwd: 123456
+    check_code: 1234
+    expected: 密码格式不正确
+
+repwd_err_example:
+  - #二次密码不一致
+    email: 1915856663@qq.com
+    nikename: liaoyudong
+    pwd: 123456
+    repwd: 1234567
+    check_code: 1234
+    expected: 2次密码不相同
+
+check_code_err_example:
+  - #验证码为空
+    email: 1915856663@qq.com
+    nikename: liaoyudong
+    pwd: 123456
+    repwd: 123456
+    check_code: ""
+    expected: 验证码不能为空
