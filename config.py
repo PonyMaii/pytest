@@ -33,3 +33,7 @@ def init_logging():
     # 在日志器添加处理器
     logger.addHandler(sh)
     logger.addHandler(fh)
+
+if __name__ == '__main__':
+    from tools.utils import get_BASE_DIR
+    print(get_BASE_DIR())

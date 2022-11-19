@@ -17,16 +17,21 @@ class LoginPage(BasePage):
         return self.get_element(*self.title)
 
     def find_user_input(self):
+        #定位用户输入框
         return self.get_element(*self.user_input)
 
     def find_pwd_input(self):
+        #定位密码输入框
         return self.get_element(*self.pwd_input)
 
     def find_enter_btn(self):
+        #定位确认按钮
         return self.get_element(*self.enter_btn)
 
     def find_loginErr_info(self):
         return self.get_element(*self.loginErr_info)
+
+
 
 class LoginHandle(BaseHandle):
     def __init__(self):

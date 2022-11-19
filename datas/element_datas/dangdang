@@ -37,11 +37,23 @@ EnrollPage:
   repwd_input: ["id", "txtRepeatPass"]
   #验证码
   check_code_input: ["id", "txtVerifyCode"]
-  #完成
-  comp_btn: ["id", "Button1"]
+  #点击注册
+  enroll_btn: ["css selector", ".button_1"]
+  #邮箱错误信息
+  email_err_info: ["id", "email.info"]
+  #用户名错误信息
+  name_err_info: ["id", "name.info"]
+  #密码错误信息
+  password_err_info: ["id", "password.info"]
+  #确认密码错误信息
+  repassword_err_info: ["id", "password1.info"]
+  #验证码错误信息
+  number_err_info: ["id", "number.info"]
 
+  #确认邮箱验证码按钮
+  ent_code_btn: ["class name", "finsh"]
 
   #断言验证邮箱
-  write_in: ["class name","write_in"]
+  write_in_info: ["class name","write_in"]
   #断言注册成功
-  login_bj: ["css selector", ".login_bj>h5"]
+  login_bj_info: ["css selector", ".login_bj>h5"]

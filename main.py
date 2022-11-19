@@ -32,7 +32,8 @@ if __name__ == '__main__':
     pytest.main(["--html=./report/report.html",
                  "--junit-xml=./report/report.xml",
                  "--durations=10", "-vv",
-                 "--alluredir", "./report/temp_allure"])
+                 "--alluredir", "./report/temp_allure",
+                 "--clean-alluredir",r"test\test_web\test_enroll.py"])
 
     """
     -s: 输出用例中所有需要打印的内容

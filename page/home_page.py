@@ -50,6 +50,10 @@ class HomeProxy():
         #进入登入页面
         self.home_handle.click_login_btn()
 
+    def to_enroll(self):
+        #进入注册页面
+        self.home_handle.click_enroll_btn()
+
     def get_logout(self):
         return self.home_handle.get_logout_btn_info()
 

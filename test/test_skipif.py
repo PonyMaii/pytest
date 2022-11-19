@@ -15,6 +15,7 @@ skipif = pytest.mark.skipif(condition=2 > 1, reason="跳过")
 
 class Test_A:
 
+    @pytest.mark.filterwarnings
     def test_a(self):
         print("a=============>")
 
