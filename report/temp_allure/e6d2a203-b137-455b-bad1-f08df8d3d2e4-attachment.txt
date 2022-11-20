@@ -1,2 +1,0 @@
-DELETE FROM `dang`.`d_user` WHERE  `email`='1915856663@qq.com'
-删除成功

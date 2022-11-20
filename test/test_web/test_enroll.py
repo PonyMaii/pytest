@@ -27,7 +27,8 @@ class TestEnroll:
         UtilsDriver().quit_web_driver()
 
     def teardown_class(self):
-        d_mysql.Delete(table_name="`dang`.`d_user`", condition=" `email`='1915856663@qq.com'")
+        d_mysql.Delete(table_name="`dang`.`d_user`",
+                       condition=f"email=+'{case_data['p_example'][0][0]}'")
 
     @pytest.mark.parametrize("email,nikename,pwd,repwd,check_code,expected1,expected2",
                              case_data['p_example'])
@@ -90,4 +91,7 @@ class TestEnroll:
         assert self.enrool_proxy.get_number_err() == expected
 
 if __name__ == '__main__':
-    TestEnroll().test_case01_enroll(*case_data["p_example"][0])
+    # TestEnroll().test_case01_enroll(*case_data["p_example"][0])
+    print(case_data['p_example'][0][0])
+    d_mysql.Delete(table_name="`dang`.`d_user`",
+                   condition=f"email=+'{case_data['p_example'][0][0]}'")

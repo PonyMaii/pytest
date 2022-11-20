@@ -1,121 +1,51 @@
 [ {
-  "uid" : "a69f504905a42dad",
-  "name" : "test_pwd_err_example[1915856663@qq.com-1234--123456-1234-密码不能为空]",
+  "uid" : "cdbaf23b7e66ece",
+  "name" : "test_02_login[xiaomazz@126.com-123456-用户名或密码错误]",
   "time" : {
-    "start" : 1668868495555,
-    "stop" : 1668868497808,
-    "duration" : 2253
+    "start" : 1668954767439,
+    "stop" : 1668954771659,
+    "duration" : 4220
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "acad583851a7b56c",
+  "name" : "test_02_login[xiaoma@126.com-12345678-用户名或密码错误]",
+  "time" : {
+    "start" : 1668954790049,
+    "stop" : 1668954794252,
+    "duration" : 4203
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "20eef4bb4824b9fe",
+  "name" : "test_02_login[-123456-请填写用户名和密码]",
+  "time" : {
+    "start" : 1668954775018,
+    "stop" : 1668954779197,
+    "duration" : 4179
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b78533455ea83d29",
+  "name" : "test_01_login[xiaoma@126.com-123456-登出]",
+  "time" : {
+    "start" : 1668954759906,
+    "stop" : 1668954764141,
+    "duration" : 4235
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9087fc8b654274ad",
-  "name" : "test_email_err_enroll[xiaoma@126.com-liaoyudong-123456-123456-1234-Email已存在]",
+  "uid" : "bc80593bb1403b68",
+  "name" : "test_02_login[xiaoma@126.com--请填写用户名和密码]",
   "time" : {
-    "start" : 1668868462557,
-    "stop" : 1668868464810,
-    "duration" : 2253
+    "start" : 1668954782567,
+    "stop" : 1668954786741,
+    "duration" : 4174
   },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9bbfbd030b8ca2d7",
-  "name" : "test_case01_enroll[1915856663@qq.com-liaoyudong-123456-123456-1234-输入您收到邮件中的验证码：-欢迎加入当当网]",
-  "time" : {
-    "start" : 1668868443202,
-    "stop" : 1668868453601,
-    "duration" : 10399
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "35d96bed4666f825",
-  "name" : "test_nikename_err_enroll[1915856663@qq.com--123456-123456-1234-昵称不能为空]",
-  "time" : {
-    "start" : 1668868479025,
-    "stop" : 1668868481260,
-    "duration" : 2235
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9cb07de105517d08",
-  "name" : "test_nikename_err_enroll[1915856663@qq.com-123456789112345678911-123456-123456-1234-昵称格式不正确]",
-  "time" : {
-    "start" : 1668868489987,
-    "stop" : 1668868492226,
-    "duration" : 2239
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c7f0692feb5a2492",
-  "name" : "test_pwd_err_example[1915856663@qq.com-1234-12345-123456-1234-密码格式不正确]",
-  "time" : {
-    "start" : 1668868501067,
-    "stop" : 1668868503301,
-    "duration" : 2234
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3018cba0cfb096a3",
-  "name" : "test_nikename_err_enroll[1915856663@qq.com-123-123456-123456-1234-昵称格式不正确]",
-  "time" : {
-    "start" : 1668868484513,
-    "stop" : 1668868486744,
-    "duration" : 2231
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "623522c1282f3308",
-  "name" : "test_email_err_enroll[@#@-liaoyudong-123456-123456-1234-Email格式不正确]",
-  "time" : {
-    "start" : 1668868473524,
-    "stop" : 1668868475770,
-    "duration" : 2246
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "557680023ba7eecf",
-  "name" : "test_email_err_enroll[-liaoyudong-123456-123456-1234-Email不能为空]",
-  "time" : {
-    "start" : 1668868456934,
-    "stop" : 1668868459226,
-    "duration" : 2292
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9cb439dfe1ba33e6",
-  "name" : "test_check_code_err_example[1915856663@qq.com-liaoyudong-123456-123456--验证码不能为空]",
-  "time" : {
-    "start" : 1668868512063,
-    "stop" : 1668868514331,
-    "duration" : 2268
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8d12768586631a7",
-  "name" : "test_email_err_enroll[xiaoma-liaoyudong-123456-123456-1234-Email格式不正确]",
-  "time" : {
-    "start" : 1668868468039,
-    "stop" : 1668868470267,
-    "duration" : 2228
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d30224c6f52192f2",
-  "name" : "test_repwd_err_example[1915856663@qq.com-liaoyudong-123456-1234567-1234-2次密码不相同]",
-  "time" : {
-    "start" : 1668868506561,
-    "stop" : 1668868508806,
-    "duration" : 2245
-  },
-  "status" : "passed",
+  "status" : "failed",
   "severity" : "normal"
 } ]

@@ -30,10 +30,12 @@ import pytest
 
 if __name__ == '__main__':
     pytest.main(["--html=./report/report.html",
+                 "--self-contained-html",
                  "--junit-xml=./report/report.xml",
                  "--durations=10", "-vv",
                  "--alluredir", "./report/temp_allure",
-                 "--clean-alluredir",r"test\test_web\test_enroll.py"])
+                 "--clean-alluredir",
+                 r"test\test_web\test_login.py"])
 
     """
     -s: 输出用例中所有需要打印的内容

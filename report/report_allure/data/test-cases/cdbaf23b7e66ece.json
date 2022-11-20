@@ -1,0 +1,118 @@
+{
+  "uid" : "cdbaf23b7e66ece",
+  "name" : "test_02_login[xiaomazz@126.com-123456-用户名或密码错误]",
+  "fullName" : "test.test_web.test_login.Test_Login#test_02_login",
+  "historyId" : "b7506fc0cfa1a4eb23ba44997f558aa1",
+  "time" : {
+    "start" : 1668954767439,
+    "stop" : 1668954771659,
+    "duration" : 4220
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 0",
+  "statusTrace" : "self = <test.test_web.test_login.Test_Login object at 0x000001DDFE5C6A60>\nusername = 'xiaomazz@126.com', password = 123456, expected = '用户名或密码错误'\n\n    @pytest.mark.parametrize(\"username, password, expected\",\n                             testcase[\"c_example\"])\n    def test_02_login(self, username, password, expected):\n        self.home_proxy.to_login()\n        time.sleep(2)\n        self.login_proxy.enter(username, password)\n        time.sleep(2)\n        loginErr_text = self.login_proxy.get_loginErr()\n        assert loginErr_text == expected\n>       assert 0\nE       assert 0\n\ntest\\test_web\\test_login.py:50: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_Test_Login",
+    "time" : {
+      "start" : 1668954766213,
+      "stop" : 1668954767438,
+      "duration" : 1225
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 0",
+    "statusTrace" : "self = <test.test_web.test_login.Test_Login object at 0x000001DDFE5C6A60>\nusername = 'xiaomazz@126.com', password = 123456, expected = '用户名或密码错误'\n\n    @pytest.mark.parametrize(\"username, password, expected\",\n                             testcase[\"c_example\"])\n    def test_02_login(self, username, password, expected):\n        self.home_proxy.to_login()\n        time.sleep(2)\n        self.login_proxy.enter(username, password)\n        time.sleep(2)\n        loginErr_text = self.login_proxy.get_loginErr()\n        assert loginErr_text == expected\n>       assert 0\nE       assert 0\n\ntest\\test_web\\test_login.py:50: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4d2ab67030e9d8e3",
+      "name" : "stdout",
+      "source" : "4d2ab67030e9d8e3.txt",
+      "type" : "text/plain",
+      "size" : 78
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_Test_Login::0",
+    "time" : {
+      "start" : 1668954771733,
+      "stop" : 1668954773803,
+      "duration" : 2070
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Login"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "16956-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "'用户名或密码错误'"
+  }, {
+    "name" : "password",
+    "value" : "123456"
+  }, {
+    "name" : "username",
+    "value" : "'xiaomazz@126.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "cdbaf23b7e66ece.json",
+  "parameterValues" : [ "'用户名或密码错误'", "123456", "'xiaomazz@126.com'" ]
+}

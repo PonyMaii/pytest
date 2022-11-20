@@ -4,157 +4,73 @@
   "children" : [ {
     "name" : "test.test_web",
     "children" : [ {
-      "name" : "test_enroll",
+      "name" : "test_login",
       "children" : [ {
-        "name" : "TestEnroll",
+        "name" : "Test_Login",
         "children" : [ {
-          "name" : "test_case01_enroll[1915856663@qq.com-liaoyudong-123456-123456-1234-输入您收到邮件中的验证码：-欢迎加入当当网]",
-          "uid" : "9bbfbd030b8ca2d7",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
+          "name" : "test_01_login[xiaoma@126.com-123456-登出]",
+          "uid" : "b78533455ea83d29",
+          "parentUid" : "2ea24ff38a8cdb11bbca3b31045ca8bf",
           "status" : "passed",
           "time" : {
-            "start" : 1668868443202,
-            "stop" : 1668868453601,
-            "duration" : 10399
+            "start" : 1668954759906,
+            "stop" : 1668954764141,
+            "duration" : 4235
           },
           "flaky" : false,
-          "parameters" : [ "1234", "'1915856663@qq.com'", "'输入您收到邮件中的验证码：'", "'欢迎加入当当网'", "'liaoyudong'", "123456", "123456" ]
+          "parameters" : [ "'登出'", "123456", "'xiaoma@126.com'" ]
         }, {
-          "name" : "test_email_err_enroll[-liaoyudong-123456-123456-1234-Email不能为空]",
-          "uid" : "557680023ba7eecf",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
+          "name" : "test_02_login[xiaomazz@126.com-123456-用户名或密码错误]",
+          "uid" : "cdbaf23b7e66ece",
+          "parentUid" : "2ea24ff38a8cdb11bbca3b31045ca8bf",
+          "status" : "failed",
           "time" : {
-            "start" : 1668868456934,
-            "stop" : 1668868459226,
-            "duration" : 2292
+            "start" : 1668954767439,
+            "stop" : 1668954771659,
+            "duration" : 4220
           },
           "flaky" : false,
-          "parameters" : [ "1234", "''", "'Email不能为空'", "'liaoyudong'", "123456", "123456" ]
+          "parameters" : [ "'用户名或密码错误'", "123456", "'xiaomazz@126.com'" ]
         }, {
-          "name" : "test_email_err_enroll[xiaoma@126.com-liaoyudong-123456-123456-1234-Email已存在]",
-          "uid" : "9087fc8b654274ad",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
+          "name" : "test_02_login[-123456-请填写用户名和密码]",
+          "uid" : "20eef4bb4824b9fe",
+          "parentUid" : "2ea24ff38a8cdb11bbca3b31045ca8bf",
+          "status" : "failed",
           "time" : {
-            "start" : 1668868462557,
-            "stop" : 1668868464810,
-            "duration" : 2253
+            "start" : 1668954775018,
+            "stop" : 1668954779197,
+            "duration" : 4179
           },
           "flaky" : false,
-          "parameters" : [ "1234", "'xiaoma@126.com'", "'Email已存在'", "'liaoyudong'", "123456", "123456" ]
+          "parameters" : [ "'请填写用户名和密码'", "123456", "''" ]
         }, {
-          "name" : "test_email_err_enroll[xiaoma-liaoyudong-123456-123456-1234-Email格式不正确]",
-          "uid" : "8d12768586631a7",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
+          "name" : "test_02_login[xiaoma@126.com--请填写用户名和密码]",
+          "uid" : "bc80593bb1403b68",
+          "parentUid" : "2ea24ff38a8cdb11bbca3b31045ca8bf",
+          "status" : "failed",
           "time" : {
-            "start" : 1668868468039,
-            "stop" : 1668868470267,
-            "duration" : 2228
+            "start" : 1668954782567,
+            "stop" : 1668954786741,
+            "duration" : 4174
           },
           "flaky" : false,
-          "parameters" : [ "1234", "'xiaoma'", "'Email格式不正确'", "'liaoyudong'", "123456", "123456" ]
+          "parameters" : [ "'请填写用户名和密码'", "''", "'xiaoma@126.com'" ]
         }, {
-          "name" : "test_email_err_enroll[@#@-liaoyudong-123456-123456-1234-Email格式不正确]",
-          "uid" : "623522c1282f3308",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
+          "name" : "test_02_login[xiaoma@126.com-12345678-用户名或密码错误]",
+          "uid" : "acad583851a7b56c",
+          "parentUid" : "2ea24ff38a8cdb11bbca3b31045ca8bf",
+          "status" : "failed",
           "time" : {
-            "start" : 1668868473524,
-            "stop" : 1668868475770,
-            "duration" : 2246
+            "start" : 1668954790049,
+            "stop" : 1668954794252,
+            "duration" : 4203
           },
           "flaky" : false,
-          "parameters" : [ "1234", "'@#@'", "'Email格式不正确'", "'liaoyudong'", "123456", "123456" ]
-        }, {
-          "name" : "test_nikename_err_enroll[1915856663@qq.com--123456-123456-1234-昵称不能为空]",
-          "uid" : "35d96bed4666f825",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
-          "time" : {
-            "start" : 1668868479025,
-            "stop" : 1668868481260,
-            "duration" : 2235
-          },
-          "flaky" : false,
-          "parameters" : [ "1234", "'1915856663@qq.com'", "'昵称不能为空'", "''", "123456", "123456" ]
-        }, {
-          "name" : "test_nikename_err_enroll[1915856663@qq.com-123-123456-123456-1234-昵称格式不正确]",
-          "uid" : "3018cba0cfb096a3",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
-          "time" : {
-            "start" : 1668868484513,
-            "stop" : 1668868486744,
-            "duration" : 2231
-          },
-          "flaky" : false,
-          "parameters" : [ "1234", "'1915856663@qq.com'", "'昵称格式不正确'", "123", "123456", "123456" ]
-        }, {
-          "name" : "test_nikename_err_enroll[1915856663@qq.com-123456789112345678911-123456-123456-1234-昵称格式不正确]",
-          "uid" : "9cb07de105517d08",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
-          "time" : {
-            "start" : 1668868489987,
-            "stop" : 1668868492226,
-            "duration" : 2239
-          },
-          "flaky" : false,
-          "parameters" : [ "1234", "'1915856663@qq.com'", "'昵称格式不正确'", "123456789112345678911", "123456", "123456" ]
-        }, {
-          "name" : "test_pwd_err_example[1915856663@qq.com-1234--123456-1234-密码不能为空]",
-          "uid" : "a69f504905a42dad",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
-          "time" : {
-            "start" : 1668868495555,
-            "stop" : 1668868497808,
-            "duration" : 2253
-          },
-          "flaky" : false,
-          "parameters" : [ "1234", "'1915856663@qq.com'", "'密码不能为空'", "1234", "''", "123456" ]
-        }, {
-          "name" : "test_pwd_err_example[1915856663@qq.com-1234-12345-123456-1234-密码格式不正确]",
-          "uid" : "c7f0692feb5a2492",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
-          "time" : {
-            "start" : 1668868501067,
-            "stop" : 1668868503301,
-            "duration" : 2234
-          },
-          "flaky" : false,
-          "parameters" : [ "1234", "'1915856663@qq.com'", "'密码格式不正确'", "1234", "12345", "123456" ]
-        }, {
-          "name" : "test_repwd_err_example[1915856663@qq.com-liaoyudong-123456-1234567-1234-2次密码不相同]",
-          "uid" : "d30224c6f52192f2",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
-          "time" : {
-            "start" : 1668868506561,
-            "stop" : 1668868508806,
-            "duration" : 2245
-          },
-          "flaky" : false,
-          "parameters" : [ "1234", "'1915856663@qq.com'", "'2次密码不相同'", "'liaoyudong'", "123456", "1234567" ]
-        }, {
-          "name" : "test_check_code_err_example[1915856663@qq.com-liaoyudong-123456-123456--验证码不能为空]",
-          "uid" : "9cb439dfe1ba33e6",
-          "parentUid" : "ca2f521f4438e86609fa56202806f118",
-          "status" : "passed",
-          "time" : {
-            "start" : 1668868512063,
-            "stop" : 1668868514331,
-            "duration" : 2268
-          },
-          "flaky" : false,
-          "parameters" : [ "''", "'1915856663@qq.com'", "'验证码不能为空'", "'liaoyudong'", "123456", "123456" ]
+          "parameters" : [ "'用户名或密码错误'", "12345678", "'xiaoma@126.com'" ]
         } ],
-        "uid" : "ca2f521f4438e86609fa56202806f118"
+        "uid" : "2ea24ff38a8cdb11bbca3b31045ca8bf"
       } ],
-      "uid" : "85f1324189c4bc410ec4956474bf12a1"
+      "uid" : "28a13f9c2005294a2f799d0b6ed44774"
     } ],
     "uid" : "bd2dfbde2d5e4fce33c919d52e276ba5"
   } ]

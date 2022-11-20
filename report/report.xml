@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="12" time="74.584" timestamp="2022-11-19T22:34:01.798342" hostname="xiaoma"><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_case01_enroll[1915856663@qq.com-liaoyudong-123456-123456-1234-输入您收到邮件中的验证码：-欢迎加入当当网]" time="13.670" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_email_err_enroll[-liaoyudong-123456-123456-1234-Email不能为空]" time="5.662" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_email_err_enroll[xiaoma@126.com-liaoyudong-123456-123456-1234-Email已存在]" time="5.534" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_email_err_enroll[xiaoma-liaoyudong-123456-123456-1234-Email格式不正确]" time="5.466" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_email_err_enroll[@#@-liaoyudong-123456-123456-1234-Email格式不正确]" time="5.503" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_nikename_err_enroll[1915856663@qq.com--123456-123456-1234-昵称不能为空]" time="5.489" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_nikename_err_enroll[1915856663@qq.com-123-123456-123456-1234-昵称格式不正确]" time="5.480" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_nikename_err_enroll[1915856663@qq.com-123456789112345678911-123456-123456-1234-昵称格式不正确]" time="5.515" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_pwd_err_example[1915856663@qq.com-1234--123456-1234-密码不能为空]" time="5.560" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_pwd_err_example[1915856663@qq.com-1234-12345-123456-1234-密码格式不正确]" time="5.483" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_repwd_err_example[1915856663@qq.com-liaoyudong-123456-1234567-1234-2次密码不相同]" time="5.503" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_check_code_err_example[1915856663@qq.com-liaoyudong-123456-123456--验证码不能为空]" time="5.527" /></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="5" time="37.844" timestamp="2022-11-20T22:32:38.478797" hostname="xiaoma"><testcase classname="test.test_web.test_login.Test_Login" name="test_01_login[xiaoma@126.com-123456-\u767b\u51fa]" time="7.554" /><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[xiaomazz@126.com-123456-\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef]" time="7.518"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001DDFE5C6A60&gt;
+username = 'xiaomazz@126.com', password = 123456, expected = '用户名或密码错误'
+
+    @pytest.mark.parametrize("username, password, expected",
+                             testcase["c_example"])
+    def test_02_login(self, username, password, expected):
+        self.home_proxy.to_login()
+        time.sleep(2)
+        self.login_proxy.enter(username, password)
+        time.sleep(2)
+        loginErr_text = self.login_proxy.get_loginErr()
+        assert loginErr_text == expected
+&gt;       assert 0
+E       assert 0
+
+test\test_web\test_login.py:50: AssertionError</failure></testcase><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[-123456-\u8bf7\u586b\u5199\u7528\u6237\u540d\u548c\u5bc6\u7801]" time="7.486"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001DDFE5C6AF0&gt;
+username = '', password = 123456, expected = '请填写用户名和密码'
+
+    @pytest.mark.parametrize("username, password, expected",
+                             testcase["c_example"])
+    def test_02_login(self, username, password, expected):
+        self.home_proxy.to_login()
+        time.sleep(2)
+        self.login_proxy.enter(username, password)
+        time.sleep(2)
+        loginErr_text = self.login_proxy.get_loginErr()
+        assert loginErr_text == expected
+&gt;       assert 0
+E       assert 0
+
+test\test_web\test_login.py:50: AssertionError</failure></testcase><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[xiaoma@126.com--\u8bf7\u586b\u5199\u7528\u6237\u540d\u548c\u5bc6\u7801]" time="7.496"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001DDFE5C6B80&gt;
+username = 'xiaoma@126.com', password = '', expected = '请填写用户名和密码'
+
+    @pytest.mark.parametrize("username, password, expected",
+                             testcase["c_example"])
+    def test_02_login(self, username, password, expected):
+        self.home_proxy.to_login()
+        time.sleep(2)
+        self.login_proxy.enter(username, password)
+        time.sleep(2)
+        loginErr_text = self.login_proxy.get_loginErr()
+        assert loginErr_text == expected
+&gt;       assert 0
+E       assert 0
+
+test\test_web\test_login.py:50: AssertionError</failure></testcase><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[xiaoma@126.com-12345678-\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef]" time="7.485"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001DDFE5C6C10&gt;
+username = 'xiaoma@126.com', password = 12345678, expected = '用户名或密码错误'
+
+    @pytest.mark.parametrize("username, password, expected",
+                             testcase["c_example"])
+    def test_02_login(self, username, password, expected):
+        self.home_proxy.to_login()
+        time.sleep(2)
+        self.login_proxy.enter(username, password)
+        time.sleep(2)
+        loginErr_text = self.login_proxy.get_loginErr()
+        assert loginErr_text == expected
+&gt;       assert 0
+E       assert 0
+
+test\test_web\test_login.py:50: AssertionError</failure></testcase></testsuite></testsuites>

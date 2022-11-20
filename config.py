@@ -12,7 +12,6 @@ BaseDir = os.path.dirname(__file__)
 #  os.path.dirname此方法的作用是用来获取用文件的路径
 #  __file__表示的是当前文件(config.py)
 
-
 def init_logging():
     # 创建日志器
     logger = logging.getLogger()
@@ -34,6 +33,19 @@ def init_logging():
     logger.addHandler(sh)
     logger.addHandler(fh)
 
+
+
+
+def get_BASE_DIR():
+    import sys, os
+    if getattr(sys, "frozen", False):
+        _BASE_DIR = os.path.dirname(sys.executable)
+    else:
+        _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    return _BASE_DIR
+BASE_DIR = get_BASE_DIR()
+
 if __name__ == '__main__':
     from tools.utils import get_BASE_DIR
     print(get_BASE_DIR())
+
