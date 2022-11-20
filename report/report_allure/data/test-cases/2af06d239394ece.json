@@ -1,0 +1,104 @@
+{
+  "uid" : "2af06d239394ece",
+  "name" : "test_to_login",
+  "fullName" : "test.test_web.test_to_login.Test_HomePage#test_to_login",
+  "historyId" : "12ec9096dc2532553bb49276bea8f21d",
+  "time" : {
+    "start" : 1668969632668,
+    "stop" : 1668969634745,
+    "duration" : 2077
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_Test_HomePage",
+    "time" : {
+      "start" : 1668969631388,
+      "stop" : 1668969632668,
+      "duration" : 1280
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "56e7579348acecce",
+      "name" : "stdout",
+      "source" : "56e7579348acecce.txt",
+      "type" : "text/plain",
+      "size" : 31
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_Test_HomePage::0",
+    "time" : {
+      "start" : 1668969634745,
+      "stop" : 1668969636778,
+      "duration" : 2033
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "team('李四团队')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_to_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_HomePage"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "2312-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_to_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "team('李四团队')" ]
+  },
+  "source" : "2af06d239394ece.json",
+  "parameterValues" : [ ]
+}

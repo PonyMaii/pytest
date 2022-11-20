@@ -12,7 +12,8 @@ pytest.main([]) #pytest运行用例的方式 可以在任意py文件下使用；
 """
 
 import pytest
-
+from tools.auto_email import AutoEmail
+from config import BASE_DIR
 
 """
     Python测试发现约定
@@ -44,3 +45,6 @@ if __name__ == '__main__':
     os.system("allure generate ./report/temp_allure -o ./report/report_allure/ --clean")
     # generate 后面指的是执行收集的用例目录
     # -o 标识生成的报告放在哪个目录
+    ae = AutoEmail() #创建邮箱类的对象
+    report = (BASE_DIR+"/report/report.html").replace("\\", "/")
+    ae.send_email(report, "小马")

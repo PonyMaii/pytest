@@ -48,6 +48,6 @@ class Test_Login:
         time.sleep(2)
         loginErr_text = self.login_proxy.get_loginErr()
         assert loginErr_text == expected
-        assert 0
+
 if __name__ == '__main__':
     print(testcase)

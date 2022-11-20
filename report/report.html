@@ -429,12 +429,39 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 21-Nov-2022 at 01:56:23 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 21-Nov-2022 at 02:40:36 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
+        <td>BUILD_ID</td>
+        <td>8</td></tr>
+      <tr>
+        <td>BUILD_NUMBER</td>
+        <td>8</td></tr>
+      <tr>
+        <td>BUILD_TAG</td>
+        <td>jenkins-dangdang_automate-8</td></tr>
+      <tr>
+        <td>BUILD_URL</td>
+        <td><a href="http://localhost:8081/job/dangdang_automate/8/" target="_blank">http://localhost:8081/job/dangdang_automate/8/</a></td></tr>
+      <tr>
+        <td>CI</td>
+        <td>true</td></tr>
+      <tr>
+        <td>EXECUTOR_NUMBER</td>
+        <td>0</td></tr>
+      <tr>
         <td>JAVA_HOME</td>
         <td>D:\Program Files\Java\jdk1.8.0_221</td></tr>
+      <tr>
+        <td>JENKINS_URL</td>
+        <td><a href="http://localhost:8081/" target="_blank">http://localhost:8081/</a></td></tr>
+      <tr>
+        <td>JOB_NAME</td>
+        <td>dangdang_automate</td></tr>
+      <tr>
+        <td>NODE_NAME</td>
+        <td>built-in</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "1.0.0", "py": "1.11.0", "pytest": "7.1.2"}</td></tr>
@@ -446,10 +473,13 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>{"allure-pytest": "2.11.1", "cov": "4.0.0", "html": "3.1.1", "metadata": "2.0.1", "ordering": "0.6", "rerunfailures": "10.2", "xdist": "3.0.2"}</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.8.5</td></tr></table>
+        <td>3.8.5</td></tr>
+      <tr>
+        <td>WORKSPACE</td>
+        <td>C:\Users\19158\.jenkins\workspace\dangdang_automate</td></tr></table>
     <h2>Summary</h2>
-    <p>18 tests ran in 117.77 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">14 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">4 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>18 tests ran in 117.88 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">18 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -460,55 +490,11 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaomazz@126.com-123456-用户名或密码错误]</td>
-          <td class="col-duration">7.48</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;test.test_web.test_login.Test_Login object at 0x000001E2D2C77220&gt;<br/>username = &#x27;xiaomazz@126.com&#x27;, password = 123456, expected = &#x27;用户名或密码错误&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;username, password, expected&quot;,<br/>                             testcase[&quot;c_example&quot;])<br/>    def test_02_login(self, username, password, expected):<br/>        self.home_proxy.to_login()<br/>        time.sleep(2)<br/>        self.login_proxy.enter(username, password)<br/>        time.sleep(2)<br/>        loginErr_text = self.login_proxy.get_loginErr()<br/>        assert loginErr_text == expected<br/>&gt;       assert 0<br/><span class="error">E       assert 0</span><br/><br/>test\test_web\test_login.py:51: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
-<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
-<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[-123456-请填写用户名和密码]</td>
-          <td class="col-duration">7.41</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;test.test_web.test_login.Test_Login object at 0x000001E2D2C77070&gt;<br/>username = &#x27;&#x27;, password = 123456, expected = &#x27;请填写用户名和密码&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;username, password, expected&quot;,<br/>                             testcase[&quot;c_example&quot;])<br/>    def test_02_login(self, username, password, expected):<br/>        self.home_proxy.to_login()<br/>        time.sleep(2)<br/>        self.login_proxy.enter(username, password)<br/>        time.sleep(2)<br/>        loginErr_text = self.login_proxy.get_loginErr()<br/>        assert loginErr_text == expected<br/>&gt;       assert 0<br/><span class="error">E       assert 0</span><br/><br/>test\test_web\test_login.py:51: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
-<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
-<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com--请填写用户名和密码]</td>
-          <td class="col-duration">7.45</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;test.test_web.test_login.Test_Login object at 0x000001E2D2C77430&gt;<br/>username = &#x27;xiaoma@126.com&#x27;, password = &#x27;&#x27;, expected = &#x27;请填写用户名和密码&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;username, password, expected&quot;,<br/>                             testcase[&quot;c_example&quot;])<br/>    def test_02_login(self, username, password, expected):<br/>        self.home_proxy.to_login()<br/>        time.sleep(2)<br/>        self.login_proxy.enter(username, password)<br/>        time.sleep(2)<br/>        loginErr_text = self.login_proxy.get_loginErr()<br/>        assert loginErr_text == expected<br/>&gt;       assert 0<br/><span class="error">E       assert 0</span><br/><br/>test\test_web\test_login.py:51: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
-<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
-<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com-12345678-用户名或密码错误]</td>
-          <td class="col-duration">7.44</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;test.test_web.test_login.Test_Login object at 0x000001E2D2C77400&gt;<br/>username = &#x27;xiaoma@126.com&#x27;, password = 12345678, expected = &#x27;用户名或密码错误&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;username, password, expected&quot;,<br/>                             testcase[&quot;c_example&quot;])<br/>    def test_02_login(self, username, password, expected):<br/>        self.home_proxy.to_login()<br/>        time.sleep(2)<br/>        self.login_proxy.enter(username, password)<br/>        time.sleep(2)<br/>        loginErr_text = self.login_proxy.get_loginErr()<br/>        assert loginErr_text == expected<br/>&gt;       assert 0<br/><span class="error">E       assert 0</span><br/><br/>test\test_web\test_login.py:51: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
-<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
-<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_case01_enroll[1915856663@qq.com-liaoyudong-123456-123456-1234-输入您收到邮件中的验证码：-欢迎加入当当网]</td>
-          <td class="col-duration">13.70</td>
+          <td class="col-duration">13.67</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -517,7 +503,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[-liaoyudong-123456-123456-1234-Email不能为空]</td>
-          <td class="col-duration">5.58</td>
+          <td class="col-duration">5.52</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -526,7 +512,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[xiaoma@126.com-liaoyudong-123456-123456-1234-Email已存在]</td>
-          <td class="col-duration">5.51</td>
+          <td class="col-duration">5.58</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -535,7 +521,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[xiaoma-liaoyudong-123456-123456-1234-Email格式不正确]</td>
-          <td class="col-duration">5.53</td>
+          <td class="col-duration">5.54</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -553,7 +539,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_nikename_err_enroll[1915856663@qq.com--123456-123456-1234-昵称不能为空]</td>
-          <td class="col-duration">5.51</td>
+          <td class="col-duration">5.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -562,7 +548,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_nikename_err_enroll[1915856663@qq.com-123-123456-123456-1234-昵称格式不正确]</td>
-          <td class="col-duration">5.52</td>
+          <td class="col-duration">5.53</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -571,7 +557,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_nikename_err_enroll[1915856663@qq.com-123456789112345678911-123456-123456-1234-昵称格式不正确]</td>
-          <td class="col-duration">5.64</td>
+          <td class="col-duration">5.58</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -580,7 +566,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_pwd_err_example[1915856663@qq.com-1234--123456-1234-密码不能为空]</td>
-          <td class="col-duration">5.52</td>
+          <td class="col-duration">5.53</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -589,7 +575,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_pwd_err_example[1915856663@qq.com-1234-12345-123456-1234-密码格式不正确]</td>
-          <td class="col-duration">5.54</td>
+          <td class="col-duration">5.57</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -607,7 +593,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_check_code_err_example[1915856663@qq.com-liaoyudong-123456-123456--验证码不能为空]</td>
-          <td class="col-duration">5.54</td>
+          <td class="col-duration">5.50</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -618,7 +604,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_login.py::Test_Login::test_01_login[xiaoma@126.com-123456-登出]</td>
-          <td class="col-duration">7.48</td>
+          <td class="col-duration">7.52</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -629,8 +615,52 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaomazz@126.com-123456-用户名或密码错误]</td>
+          <td class="col-duration">7.47</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[-123456-请填写用户名和密码]</td>
+          <td class="col-duration">7.44</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com--请填写用户名和密码]</td>
+          <td class="col-duration">7.46</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com-12345678-用户名或密码错误]</td>
+          <td class="col-duration">7.57</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_to_login.py::Test_HomePage::test_to_login</td>
-          <td class="col-duration">5.36</td>
+          <td class="col-duration">5.39</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">

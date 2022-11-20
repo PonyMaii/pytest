@@ -1,0 +1,113 @@
+{
+  "uid" : "30fb99c696f4f56a",
+  "name" : "test_02_login[xiaomazz@126.com-123456-用户名或密码错误]",
+  "fullName" : "test.test_web.test_login.Test_Login#test_02_login",
+  "historyId" : "b7506fc0cfa1a4eb23ba44997f558aa1",
+  "time" : {
+    "start" : 1668969602635,
+    "stop" : 1668969606830,
+    "duration" : 4195
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_Test_Login",
+    "time" : {
+      "start" : 1668969601403,
+      "stop" : 1668969602634,
+      "duration" : 1231
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4a9d3feb02235287",
+      "name" : "stdout",
+      "source" : "4a9d3feb02235287.txt",
+      "type" : "text/plain",
+      "size" : 78
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_Test_Login::0",
+    "time" : {
+      "start" : 1668969606832,
+      "stop" : 1668969608879,
+      "duration" : 2047
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "team('小马团队')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Login"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "2312-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "'用户名或密码错误'"
+  }, {
+    "name" : "password",
+    "value" : "123456"
+  }, {
+    "name" : "username",
+    "value" : "'xiaomazz@126.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "team('小马团队')" ]
+  },
+  "source" : "30fb99c696f4f56a.json",
+  "parameterValues" : [ "'用户名或密码错误'", "123456", "'xiaomazz@126.com'" ]
+}
