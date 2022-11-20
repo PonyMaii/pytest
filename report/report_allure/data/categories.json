@@ -7,49 +7,49 @@
       "name" : "AssertionError: assert 0",
       "children" : [ {
         "name" : "test_02_login[xiaomazz@126.com-123456-用户名或密码错误]",
-        "uid" : "cdbaf23b7e66ece",
+        "uid" : "695498ef7ab39129",
         "parentUid" : "c9c77d7ae15b4ab6e63220cefc19b68f",
         "status" : "failed",
         "time" : {
-          "start" : 1668954767439,
-          "stop" : 1668954771659,
-          "duration" : 4220
+          "start" : 1668966949435,
+          "stop" : 1668966953627,
+          "duration" : 4192
         },
         "flaky" : false,
         "parameters" : [ "'用户名或密码错误'", "123456", "'xiaomazz@126.com'" ]
       }, {
         "name" : "test_02_login[-123456-请填写用户名和密码]",
-        "uid" : "20eef4bb4824b9fe",
+        "uid" : "88fd832e3747dd7d",
         "parentUid" : "c9c77d7ae15b4ab6e63220cefc19b68f",
         "status" : "failed",
         "time" : {
-          "start" : 1668954775018,
-          "stop" : 1668954779197,
-          "duration" : 4179
+          "start" : 1668966956973,
+          "stop" : 1668966961150,
+          "duration" : 4177
         },
         "flaky" : false,
         "parameters" : [ "'请填写用户名和密码'", "123456", "''" ]
       }, {
         "name" : "test_02_login[xiaoma@126.com--请填写用户名和密码]",
-        "uid" : "bc80593bb1403b68",
+        "uid" : "6ad56a189ea2bfaa",
         "parentUid" : "c9c77d7ae15b4ab6e63220cefc19b68f",
         "status" : "failed",
         "time" : {
-          "start" : 1668954782567,
-          "stop" : 1668954786741,
-          "duration" : 4174
+          "start" : 1668966964400,
+          "stop" : 1668966968571,
+          "duration" : 4171
         },
         "flaky" : false,
         "parameters" : [ "'请填写用户名和密码'", "''", "'xiaoma@126.com'" ]
       }, {
         "name" : "test_02_login[xiaoma@126.com-12345678-用户名或密码错误]",
-        "uid" : "acad583851a7b56c",
+        "uid" : "d19c317bceae7c8e",
         "parentUid" : "c9c77d7ae15b4ab6e63220cefc19b68f",
         "status" : "failed",
         "time" : {
-          "start" : 1668954790049,
-          "stop" : 1668954794252,
-          "duration" : 4203
+          "start" : 1668966971882,
+          "stop" : 1668966976061,
+          "duration" : 4179
         },
         "flaky" : false,
         "parameters" : [ "'用户名或密码错误'", "12345678", "'xiaoma@126.com'" ]

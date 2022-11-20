@@ -1,0 +1,139 @@
+{
+  "uid" : "d0d56f9e6908eba0",
+  "name" : "test_case01_enroll[1915856663@qq.com-liaoyudong-123456-123456-1234-输入您收到邮件中的验证码：-欢迎加入当当网]",
+  "fullName" : "test.test_web.test_enroll.TestEnroll#test_case01_enroll",
+  "historyId" : "9802b6bf3e649b695503718d7ad74cb9",
+  "time" : {
+    "start" : 1668966867202,
+    "stop" : 1668966877583,
+    "duration" : 10381
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestEnroll",
+    "time" : {
+      "start" : 1668966865950,
+      "stop" : 1668966867201,
+      "duration" : 1251
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_xunit_setup_class_fixture_TestEnroll",
+    "time" : {
+      "start" : 1668966865950,
+      "stop" : 1668966865950,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestEnroll::0",
+    "time" : {
+      "start" : 1668966877589,
+      "stop" : 1668966879658,
+      "duration" : 2069
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_xunit_setup_class_fixture_TestEnroll::0",
+    "time" : {
+      "start" : 1668966940701,
+      "stop" : 1668966940704,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "user('小马')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_enroll"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEnroll"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "27768-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_enroll"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "check_code",
+    "value" : "1234"
+  }, {
+    "name" : "email",
+    "value" : "'1915856663@qq.com'"
+  }, {
+    "name" : "expected1",
+    "value" : "'输入您收到邮件中的验证码：'"
+  }, {
+    "name" : "expected2",
+    "value" : "'欢迎加入当当网'"
+  }, {
+    "name" : "nikename",
+    "value" : "'liaoyudong'"
+  }, {
+    "name" : "pwd",
+    "value" : "123456"
+  }, {
+    "name" : "repwd",
+    "value" : "123456"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "user('小马')" ]
+  },
+  "source" : "d0d56f9e6908eba0.json",
+  "parameterValues" : [ "1234", "'1915856663@qq.com'", "'输入您收到邮件中的验证码：'", "'欢迎加入当当网'", "'liaoyudong'", "123456", "123456" ]
+}

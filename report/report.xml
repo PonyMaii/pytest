@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="5" time="37.844" timestamp="2022-11-20T22:32:38.478797" hostname="xiaoma"><testcase classname="test.test_web.test_login.Test_Login" name="test_01_login[xiaoma@126.com-123456-\u767b\u51fa]" time="7.554" /><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[xiaomazz@126.com-123456-\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef]" time="7.518"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001DDFE5C6A60&gt;
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="18" time="117.768" timestamp="2022-11-21T01:54:25.765253" hostname="xiaoma"><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_case01_enroll[1915856663@qq.com-liaoyudong-123456-123456-1234-\u8f93\u5165\u60a8\u6536\u5230\u90ae\u4ef6\u4e2d\u7684\u9a8c\u8bc1\u7801\uff1a-\u6b22\u8fce\u52a0\u5165\u5f53\u5f53\u7f51]" time="13.705" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_email_err_enroll[-liaoyudong-123456-123456-1234-Email\u4e0d\u80fd\u4e3a\u7a7a]" time="5.588" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_email_err_enroll[xiaoma@126.com-liaoyudong-123456-123456-1234-Email\u5df2\u5b58\u5728]" time="5.515" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_email_err_enroll[xiaoma-liaoyudong-123456-123456-1234-Email\u683c\u5f0f\u4e0d\u6b63\u786e]" time="5.539" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_email_err_enroll[@#@-liaoyudong-123456-123456-1234-Email\u683c\u5f0f\u4e0d\u6b63\u786e]" time="5.556" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_nikename_err_enroll[1915856663@qq.com--123456-123456-1234-\u6635\u79f0\u4e0d\u80fd\u4e3a\u7a7a]" time="5.516" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_nikename_err_enroll[1915856663@qq.com-123-123456-123456-1234-\u6635\u79f0\u683c\u5f0f\u4e0d\u6b63\u786e]" time="5.524" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_nikename_err_enroll[1915856663@qq.com-123456789112345678911-123456-123456-1234-\u6635\u79f0\u683c\u5f0f\u4e0d\u6b63\u786e]" time="5.645" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_pwd_err_example[1915856663@qq.com-1234--123456-1234-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]" time="5.528" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_pwd_err_example[1915856663@qq.com-1234-12345-123456-1234-\u5bc6\u7801\u683c\u5f0f\u4e0d\u6b63\u786e]" time="5.545" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_repwd_err_example[1915856663@qq.com-liaoyudong-123456-1234567-1234-2\u6b21\u5bc6\u7801\u4e0d\u76f8\u540c]" time="5.535" /><testcase classname="test.test_web.test_enroll.TestEnroll" name="test_check_code_err_example[1915856663@qq.com-liaoyudong-123456-123456--\u9a8c\u8bc1\u7801\u4e0d\u80fd\u4e3a\u7a7a]" time="5.541" /><testcase classname="test.test_web.test_login.Test_Login" name="test_01_login[xiaoma@126.com-123456-\u767b\u51fa]" time="7.484" /><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[xiaomazz@126.com-123456-\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef]" time="7.485"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001E2D2C77220&gt;
 username = 'xiaomazz@126.com', password = 123456, expected = '用户名或密码错误'
 
     @pytest.mark.parametrize("username, password, expected",
@@ -13,7 +13,7 @@ username = 'xiaomazz@126.com', password = 123456, expected = '用户名或密码
 &gt;       assert 0
 E       assert 0
 
-test\test_web\test_login.py:50: AssertionError</failure></testcase><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[-123456-\u8bf7\u586b\u5199\u7528\u6237\u540d\u548c\u5bc6\u7801]" time="7.486"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001DDFE5C6AF0&gt;
+test\test_web\test_login.py:51: AssertionError</failure></testcase><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[-123456-\u8bf7\u586b\u5199\u7528\u6237\u540d\u548c\u5bc6\u7801]" time="7.419"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001E2D2C77070&gt;
 username = '', password = 123456, expected = '请填写用户名和密码'
 
     @pytest.mark.parametrize("username, password, expected",
@@ -28,7 +28,7 @@ username = '', password = 123456, expected = '请填写用户名和密码'
 &gt;       assert 0
 E       assert 0
 
-test\test_web\test_login.py:50: AssertionError</failure></testcase><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[xiaoma@126.com--\u8bf7\u586b\u5199\u7528\u6237\u540d\u548c\u5bc6\u7801]" time="7.496"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001DDFE5C6B80&gt;
+test\test_web\test_login.py:51: AssertionError</failure></testcase><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[xiaoma@126.com--\u8bf7\u586b\u5199\u7528\u6237\u540d\u548c\u5bc6\u7801]" time="7.459"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001E2D2C77430&gt;
 username = 'xiaoma@126.com', password = '', expected = '请填写用户名和密码'
 
     @pytest.mark.parametrize("username, password, expected",
@@ -43,7 +43,7 @@ username = 'xiaoma@126.com', password = '', expected = '请填写用户名和密
 &gt;       assert 0
 E       assert 0
 
-test\test_web\test_login.py:50: AssertionError</failure></testcase><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[xiaoma@126.com-12345678-\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef]" time="7.485"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001DDFE5C6C10&gt;
+test\test_web\test_login.py:51: AssertionError</failure></testcase><testcase classname="test.test_web.test_login.Test_Login" name="test_02_login[xiaoma@126.com-12345678-\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef]" time="7.446"><failure message="assert 0">self = &lt;test.test_web.test_login.Test_Login object at 0x000001E2D2C77400&gt;
 username = 'xiaoma@126.com', password = 12345678, expected = '用户名或密码错误'
 
     @pytest.mark.parametrize("username, password, expected",
@@ -58,4 +58,4 @@ username = 'xiaoma@126.com', password = 12345678, expected = '用户名或密码
 &gt;       assert 0
 E       assert 0
 
-test\test_web\test_login.py:50: AssertionError</failure></testcase></testsuite></testsuites>
+test\test_web\test_login.py:51: AssertionError</failure></testcase><testcase classname="test.test_web.test_to_login.Test_HomePage" name="test_to_login" time="5.365" /></testsuite></testsuites>

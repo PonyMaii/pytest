@@ -1,0 +1,121 @@
+{
+  "uid" : "6ad56a189ea2bfaa",
+  "name" : "test_02_login[xiaoma@126.com--请填写用户名和密码]",
+  "fullName" : "test.test_web.test_login.Test_Login#test_02_login",
+  "historyId" : "86e1c9a62ca26f5e064ac1639ce0984c",
+  "time" : {
+    "start" : 1668966964400,
+    "stop" : 1668966968571,
+    "duration" : 4171
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 0",
+  "statusTrace" : "self = <test.test_web.test_login.Test_Login object at 0x000001E2D2C77430>\nusername = 'xiaoma@126.com', password = '', expected = '请填写用户名和密码'\n\n    @pytest.mark.parametrize(\"username, password, expected\",\n                             testcase[\"c_example\"])\n    def test_02_login(self, username, password, expected):\n        self.home_proxy.to_login()\n        time.sleep(2)\n        self.login_proxy.enter(username, password)\n        time.sleep(2)\n        loginErr_text = self.login_proxy.get_loginErr()\n        assert loginErr_text == expected\n>       assert 0\nE       assert 0\n\ntest\\test_web\\test_login.py:51: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_Test_Login",
+    "time" : {
+      "start" : 1668966963195,
+      "stop" : 1668966964400,
+      "duration" : 1205
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 0",
+    "statusTrace" : "self = <test.test_web.test_login.Test_Login object at 0x000001E2D2C77430>\nusername = 'xiaoma@126.com', password = '', expected = '请填写用户名和密码'\n\n    @pytest.mark.parametrize(\"username, password, expected\",\n                             testcase[\"c_example\"])\n    def test_02_login(self, username, password, expected):\n        self.home_proxy.to_login()\n        time.sleep(2)\n        self.login_proxy.enter(username, password)\n        time.sleep(2)\n        loginErr_text = self.login_proxy.get_loginErr()\n        assert loginErr_text == expected\n>       assert 0\nE       assert 0\n\ntest\\test_web\\test_login.py:51: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "77837a039218d99c",
+      "name" : "stdout",
+      "source" : "77837a039218d99c.txt",
+      "type" : "text/plain",
+      "size" : 78
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_Test_Login::0",
+    "time" : {
+      "start" : 1668966968575,
+      "stop" : 1668966970655,
+      "duration" : 2080
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "team('小马团队')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Login"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "27768-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "'请填写用户名和密码'"
+  }, {
+    "name" : "password",
+    "value" : "''"
+  }, {
+    "name" : "username",
+    "value" : "'xiaoma@126.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "team('小马团队')" ]
+  },
+  "source" : "6ad56a189ea2bfaa.json",
+  "parameterValues" : [ "'请填写用户名和密码'", "''", "'xiaoma@126.com'" ]
+}

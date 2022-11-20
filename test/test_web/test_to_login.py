@@ -5,13 +5,13 @@
 # @Version：V 0.1
 # @File : test_to_login.py
 # @desc :
-
-
+import pytest
 from page.home_page import HomeProxy
 from page.login_page import LoginProxy
 from tools.utils import UtilsDriver
 import time
 
+@pytest.mark.team("李四团队")
 class Test_HomePage:
 
     def setup_class(self):

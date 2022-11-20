@@ -16,6 +16,7 @@ from tools.dd_mysql import d_mysql
 case_data = get_case_data(BASE_DIR+r"/../datas/testcase_datas/enroll")
 print(case_data)
 
+@pytest.mark.user("小马")
 class TestEnroll:
 
     def setup_method(self):
