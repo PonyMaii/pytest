@@ -47,4 +47,4 @@ if __name__ == '__main__':
     # -o 标识生成的报告放在哪个目录
     ae = AutoEmail() #创建邮箱类的对象
     report = (BASE_DIR+"/report/report.html").replace("\\", "/")
-    ae.send_email(report, "小马")
+    ae.send_email(report, "小马", "Dangdang WebUI Automation TestReport")

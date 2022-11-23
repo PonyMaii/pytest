@@ -1,0 +1,152 @@
+{
+  "uid" : "ccbe2e6871c7f252",
+  "name" : "test_email_err_enroll[xiaoma@126.com-liaoyudong-123456-123456-1234-Email已存在]",
+  "fullName" : "test.test_web.test_enroll.TestEnroll#test_email_err_enroll",
+  "historyId" : "18f4162cd5d1be1fb41e72195e06d085",
+  "time" : {
+    "start" : 1669202591293,
+    "stop" : 1669202593549,
+    "duration" : 2256
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestEnroll",
+    "time" : {
+      "start" : 1669202590095,
+      "stop" : 1669202591293,
+      "duration" : 1198
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_xunit_setup_class_fixture_TestEnroll",
+    "time" : {
+      "start" : 1669202562882,
+      "stop" : 1669202562882,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "df5fd7fc80db2076",
+      "name" : "stdout",
+      "source" : "df5fd7fc80db2076.txt",
+      "type" : "text/plain",
+      "size" : 147
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestEnroll::0",
+    "time" : {
+      "start" : 1669202593551,
+      "stop" : 1669202595591,
+      "duration" : 2040
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_xunit_setup_class_fixture_TestEnroll::0",
+    "time" : {
+      "start" : 1669202645378,
+      "stop" : 1669202645383,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "user('小马')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_enroll"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEnroll"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "19648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_enroll"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "check_code",
+    "value" : "1234"
+  }, {
+    "name" : "email",
+    "value" : "'xiaoma@126.com'"
+  }, {
+    "name" : "expected",
+    "value" : "'Email已存在'"
+  }, {
+    "name" : "nikename",
+    "value" : "'liaoyudong'"
+  }, {
+    "name" : "pwd",
+    "value" : "123456"
+  }, {
+    "name" : "repwd",
+    "value" : "123456"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "user('小马')" ]
+  },
+  "source" : "ccbe2e6871c7f252.json",
+  "parameterValues" : [ "1234", "'xiaoma@126.com'", "'Email已存在'", "'liaoyudong'", "123456", "123456" ]
+}

@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00771ED3+2236115]\n\tOrdinal0 [0x007092F1+1807089]\n\tOrdinal0 [0x006166FD+812797]\n\tOrdinal0 [0x006455DF+1005023]\n\tOrdinal0 [0x006457CB+1005515]\n\tOrdinal0 [0x00677632+1209906]\n\tOrdinal0 [0x00661AD4+1120980]\n\tOrdinal0 [0x006759E2+1202658]\n\tOrdinal0 [0x006618A6+1120422]\n\tOrdinal0 [0x0063A73D+960317]\n\tOrdinal0 [0x0063B71F+964383]\n\tGetHandleVerifier [0x00A1E7E2+2743074]\n\tGetHandleVerifier [0x00A108D4+2685972]\n\tGetHandleVerifier [0x00802BAA+532202]\n\tGetHandleVerifier [0x00801990+527568]\n\tOrdinal0 [0x0071080C+1837068]\n\tOrdinal0 [0x00714CD8+1854680]\n\tOrdinal0 [0x00714DC5+1854917]\n\tOrdinal0 [0x0071ED64+1895780]\n\tBaseThreadInitThunk [0x75FE6939+25]\n\tRtlGetFullPathName_UEx [0x77578FD2+1218]\n\tRtlGetFullPathName_UEx [0x77578F9D+1165]",
+      "children" : [ {
+        "name" : "test_case01_enroll[1915856663@qq.com-liaoyudong-123456-123456-1234-输入您收到邮件中的验证码：-欢迎加入当当网]",
+        "uid" : "c797c82db74e25c7",
+        "parentUid" : "7dfba7be4630b45ad9789f6745a89ba1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669202564103,
+          "stop" : 1669202582442,
+          "duration" : 18339
+        },
+        "flaky" : false,
+        "parameters" : [ "1234", "'1915856663@qq.com'", "'输入您收到邮件中的验证码：'", "'欢迎加入当当网'", "'liaoyudong'", "123456", "123456" ]
+      } ],
+      "uid" : "7dfba7be4630b45ad9789f6745a89ba1"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

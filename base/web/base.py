@@ -3,14 +3,14 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 from tools.utils import UtilsDriver, get_yaml
 
-from common.commons import BASE_DIR
+from config import BASE_DIR
 
 # 对象库层基类封装
 class BasePage:
     def __init__(self):
         self.driver = UtilsDriver.get_web_driver()  #获取web驱动
 
-        eles = get_yaml(BASE_DIR+"/../datas/element_datas/dangdang")[self.__class__.__name__]
+        eles = get_yaml(BASE_DIR+"/datas/element_datas/dangdang")[self.__class__.__name__]
 
         # Loader=yaml.FullLoader是加载器,更安全,以二进制读取，获取对应的class名
         for ele in eles:  # 根据字典动态赋值

@@ -1,0 +1,1 @@
+2022-11-23 19:23:33|INFO    |test_enroll.py|codeLine:68  |log information:('1915856663@qq.com', 123, 123456, 123456, 1234, '昵称格式不正确')

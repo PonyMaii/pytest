@@ -1,0 +1,1 @@
+2022-11-23 19:22:44|INFO    |test_enroll.py|codeLine:40  |log information:['1915856663@qq.com', 'liaoyudong', 123456, 123456, 1234, '输入您收到邮件中的验证码：', '欢迎加入当当网']

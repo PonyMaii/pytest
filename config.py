@@ -5,7 +5,7 @@
 # @Version：V 0.1
 # @File : config.py
 # @desc :
-import logging, logging.handlers
+import logging.handlers
 import os
 
 BaseDir = os.path.dirname(__file__)
@@ -36,14 +36,15 @@ def init_logging():
 
 
 
-def get_BASE_DIR():
-    import sys, os
-    if getattr(sys, "frozen", False):
-        _BASE_DIR = os.path.dirname(sys.executable)
-    else:
-        _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    return _BASE_DIR
-BASE_DIR = get_BASE_DIR()
+
+import sys, os
+if getattr(sys, "frozen", False):
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+BASE_DIR = BASE_DIR.replace("\\", "/")
 
 if __name__ == '__main__':
     from tools.utils import get_BASE_DIR

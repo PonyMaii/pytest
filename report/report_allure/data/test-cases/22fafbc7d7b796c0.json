@@ -1,0 +1,152 @@
+{
+  "uid" : "22fafbc7d7b796c0",
+  "name" : "test_repwd_err_example[1915856663@qq.com-liaoyudong-123456-1234567-1234-2次密码不相同]",
+  "fullName" : "test.test_web.test_enroll.TestEnroll#test_repwd_err_example",
+  "historyId" : "901686199d720ffebd939257ce7ec04f",
+  "time" : {
+    "start" : 1669202635545,
+    "stop" : 1669202637796,
+    "duration" : 2251
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestEnroll",
+    "time" : {
+      "start" : 1669202562882,
+      "stop" : 1669202562882,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestEnroll",
+    "time" : {
+      "start" : 1669202634321,
+      "stop" : 1669202635544,
+      "duration" : 1223
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "eae6e37f8d474c21",
+      "name" : "stdout",
+      "source" : "eae6e37f8d474c21.txt",
+      "type" : "text/plain",
+      "size" : 156
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestEnroll::0",
+    "time" : {
+      "start" : 1669202645378,
+      "stop" : 1669202645383,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestEnroll::0",
+    "time" : {
+      "start" : 1669202637798,
+      "stop" : 1669202639843,
+      "duration" : 2045
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "user('小马')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_enroll"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEnroll"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "19648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_enroll"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "check_code",
+    "value" : "1234"
+  }, {
+    "name" : "email",
+    "value" : "'1915856663@qq.com'"
+  }, {
+    "name" : "expected",
+    "value" : "'2次密码不相同'"
+  }, {
+    "name" : "nikename",
+    "value" : "'liaoyudong'"
+  }, {
+    "name" : "pwd",
+    "value" : "123456"
+  }, {
+    "name" : "repwd",
+    "value" : "1234567"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "user('小马')" ]
+  },
+  "source" : "22fafbc7d7b796c0.json",
+  "parameterValues" : [ "1234", "'1915856663@qq.com'", "'2次密码不相同'", "'liaoyudong'", "123456", "1234567" ]
+}

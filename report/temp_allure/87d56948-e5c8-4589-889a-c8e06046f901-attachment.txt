@@ -1,0 +1,3 @@
+2022-11-23 19:24:01|INFO    |test_enroll.py|codeLine:95  |log information:('1915856663@qq.com', 'liaoyudong', 123456, 123456, '', '验证码不能为空')
+DELETE FROM `dang`.`d_user` WHERE email=+'1915856663@qq.com'
+删除成功

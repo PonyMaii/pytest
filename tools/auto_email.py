@@ -10,7 +10,7 @@ from email.mime.text import MIMEText  #邮件正文类
 from email.utils import formataddr  #邮件地址格式化的函数
 from email.mime.multipart import MIMEMultipart  #邮件格式类
 
-
+import time
 from tools.utils import get_yaml
 from config import BASE_DIR
 
@@ -32,13 +32,13 @@ class AutoEmail():
         # 收件人邮箱地址
         self.mail_receives = email_data["mail_receives"]
 
-    def send_email(self, report, username):
+    def send_email(self, report, username, theme="dangdang系统测试报告", report_name="test_report"):
             """ report记录测试报告html文件的地址 """
         # try:
             # 1.创建邮件对象：MIMEMultipart对象(支持各种类型的邮件，比如纯文本、超文本、内嵌资源(图片等)、带附件)
             msg = MIMEMultipart('mixed')
             # 设置邮件的主题(标题)
-            msg['Subject'] = "主题：dangdang系统测试报告"
+            msg['Subject'] = f"主题：{theme}"
             # 设置发件人昵称、发件人地址
             msg['From'] = formataddr((f"发送者：{username}", self.mail_sender))
             # 设置多个收件人,通过join将列表转换为以;为间隔的字符串：'2293913554@qq.com;crowbrother@126.com'
@@ -57,7 +57,8 @@ class AutoEmail():
             # 字节通过base64编码成ASCII字符串来发送，可方便传输任意数据(字符或字节)
             file = MIMEText(my_file, 'base64', 'utf-8')
             # 添加请求头信息，设置为附件形式
-            file.add_header('Content-Disposition', 'attachment;filename="test.html"')
+            report_name = report_name
+            file.add_header('Content-Disposition', rf'attachment;filename="{report_name}.html"')
             # 添加 MIMEText 对象
             msg.attach(file)
 
@@ -83,4 +84,4 @@ if __name__ == '__main__':
     pprint(email_data)
     ae = AutoEmail() #创建邮箱类的对象
     report = (BASE_DIR+"/report/report.html").replace("\\", "/")
-    ae.send_email(report, "小马")
+    ae.send_email(report, "小马", "dangdang Web Ui Test")

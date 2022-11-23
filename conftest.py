@@ -11,8 +11,9 @@ import pytest
 from config import BASE_DIR
 import time
 import json
+from tools.my_logging import getLogger
 
-
+logger = getLogger()
 
 
 # @pytest.mark.hookwrapper
@@ -73,7 +74,7 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
             })
 
     if result:
-        with open(RESULT_PATH, "w+") as f:
+        with open(RESULT_PATH, "a+") as f:
             f.write(json.dumps(result))
 
 
@@ -100,16 +101,16 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     # """
     #
     for i in failed:
-        #失败的用例
-        location = i.location[0]+"::"+i.location[-1]
-        #print(i.nodeid)
-        # print("失败location:", location)
-        # print("错误日志：", i.longrepr)
-        _time = time.strftime("%Y-%m-%d %H-%M-%S")
-        log_path = BASE_DIR + rf"\log\{_time}-" + i.nodeid.split("[")[0].replace("::", "-").replace("/", "-").replace(".py", "") + ".log"
-        with open(log_path.replace("\\", r"/"), "w+", encoding="utf-8") as f:
-            f.write(str(i.longrepr))
-
+        # #失败的用例
+        # location = i.location[0]+"::"+i.location[-1]
+        # #print(i.nodeid)
+        # # print("失败location:", location)
+        # # print("错误日志：", i.longrepr)
+        # _time = time.strftime("%Y-%m-%d %H-%M-%S")
+        # log_path = BASE_DIR + rf"\log\{_time}-" + i.nodeid.split("[")[0].replace("::", "-").replace("/", "-").replace(".py", "") + ".log"
+        # with open(log_path.replace("\\", r"/"), "w+", encoding="utf-8") as f:
+        #     f.write(str(i.longrepr))
+        logger.exception(i.longrepr)
 
 # def pytest_itemcollected(item):
 #     team = {}

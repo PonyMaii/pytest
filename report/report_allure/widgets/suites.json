@@ -5,9 +5,9 @@
     "name" : "test.test_web",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 18,
+      "passed" : 17,
       "unknown" : 0,
       "total" : 18
     }

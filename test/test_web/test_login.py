@@ -11,7 +11,9 @@ from page.login_page import LoginProxy
 from tools.utils import UtilsDriver, get_case_data
 import pytest
 from common.commons import BASE_DIR
+from tools.my_logging import getLogger
 
+logger = getLogger()
 testcase = get_case_data(BASE_DIR + "/../datas/testcase_datas/login")
 
 @pytest.mark.team("小马团队")
@@ -31,6 +33,7 @@ class Test_Login:
     @pytest.mark.parametrize("username, password, expected",
                              testcase["p_example"])
     def test_01_login(self, username, password, expected):
+        logger.info(f"{username, password, expected}")
         print(username, password, expected)
         self.home_proxy.to_login()
         time.sleep(2)
@@ -42,6 +45,7 @@ class Test_Login:
     @pytest.mark.parametrize("username, password, expected",
                              testcase["c_example"])
     def test_02_login(self, username, password, expected):
+        logger.info(f"{username, password, expected}")
         self.home_proxy.to_login()
         time.sleep(2)
         self.login_proxy.enter(username, password)

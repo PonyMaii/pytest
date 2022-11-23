@@ -12,9 +12,11 @@ from page.enroll_page import EnrollProxy
 import pytest
 from common.commons import BASE_DIR
 from tools.dd_mysql import d_mysql
+from tools.my_logging import getLogger
+logger = getLogger()
 
 case_data = get_case_data(BASE_DIR+r"/../datas/testcase_datas/enroll")
-print(case_data)
+
 
 @pytest.mark.user("小马")
 class TestEnroll:
@@ -35,6 +37,7 @@ class TestEnroll:
                              case_data['p_example'])
     def test_case01_enroll(self, email, nikename, pwd, repwd,
                            check_code, expected1, expected2):
+        logger.info([email, nikename, pwd, repwd, check_code, expected1, expected2])
         self.home_proxy.to_enroll()
         self.enrool_proxy.enroll_user(email, nikename, pwd, repwd, str(check_code)+"\n")
         time.sleep(2)
@@ -53,6 +56,7 @@ class TestEnroll:
     @pytest.mark.parametrize("email,nikename,pwd,repwd,check_code,expected",
                              case_data["email_err_example"])
     def test_email_err_enroll(self, email, nikename, pwd, repwd, check_code, expected):
+        logger.info(f"{email, nikename, pwd, repwd, check_code, expected}")
         self.home_proxy.to_enroll()
         self.enrool_proxy.enroll_user(email, nikename, pwd, repwd, check_code)
         time.sleep(2)
@@ -61,6 +65,7 @@ class TestEnroll:
     @pytest.mark.parametrize("email,nikename,pwd,repwd,check_code,expected",
                              case_data["nikename_err_example"])
     def test_nikename_err_enroll(self, email, nikename, pwd, repwd, check_code, expected):
+        logger.info(f"{email, nikename, pwd, repwd, check_code, expected}")
         self.home_proxy.to_enroll()
         self.enrool_proxy.enroll_user(email, nikename, pwd, repwd, check_code)
         time.sleep(2)
@@ -69,6 +74,7 @@ class TestEnroll:
     @pytest.mark.parametrize("email,nikename,pwd,repwd,check_code,expected",
                              case_data["pwd_err_example"])
     def test_pwd_err_example(self, email, nikename, pwd, repwd, check_code, expected):
+        logger.info(f"{email, nikename, pwd, repwd, check_code, expected}")
         self.home_proxy.to_enroll()
         self.enrool_proxy.enroll_user(email, nikename, pwd, repwd, check_code)
         time.sleep(2)
@@ -77,6 +83,7 @@ class TestEnroll:
     @pytest.mark.parametrize("email,nikename,pwd,repwd,check_code,expected",
                              case_data["repwd_err_example"])
     def test_repwd_err_example(self, email, nikename, pwd, repwd, check_code, expected):
+        logger.info(f"{email, nikename, pwd, repwd, check_code, expected}")
         self.home_proxy.to_enroll()
         self.enrool_proxy.enroll_user(email, nikename, pwd, repwd, check_code)
         time.sleep(2)
@@ -85,6 +92,7 @@ class TestEnroll:
     @pytest.mark.parametrize("email,nikename,pwd,repwd,check_code,expected",
                              case_data["check_code_err_example"])
     def test_check_code_err_example(self, email, nikename, pwd, repwd, check_code, expected):
+        logger.info(f"{email, nikename, pwd, repwd, check_code, expected}")
         self.home_proxy.to_enroll()
         self.enrool_proxy.enroll_user(email, nikename, pwd, repwd, check_code)
         self.enrool_proxy.enroll_handle.enroll_page.find_email_input().click()

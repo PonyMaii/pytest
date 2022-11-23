@@ -1,0 +1,1 @@
+2022-11-23 19:23:16|INFO    |test_enroll.py|codeLine:59  |log information:('xiaoma', 'liaoyudong', 123456, 123456, 1234, 'Email格式不正确')

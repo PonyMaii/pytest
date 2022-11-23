@@ -1,0 +1,1 @@
+2022-11-23 19:23:44|INFO    |test_enroll.py|codeLine:77  |log information:('1915856663@qq.com', 1234, '', 123456, 1234, '密码不能为空')

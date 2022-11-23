@@ -1,0 +1,152 @@
+{
+  "uid" : "cb27e9b81d0f1adb",
+  "name" : "test_nikename_err_enroll[1915856663@qq.com-123-123456-123456-1234-昵称格式不正确]",
+  "fullName" : "test.test_web.test_enroll.TestEnroll#test_nikename_err_enroll",
+  "historyId" : "8a96572a3b0d5e34be05dfaddd8a63e4",
+  "time" : {
+    "start" : 1669202613352,
+    "stop" : 1669202615611,
+    "duration" : 2259
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestEnroll",
+    "time" : {
+      "start" : 1669202612146,
+      "stop" : 1669202613351,
+      "duration" : 1205
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_xunit_setup_class_fixture_TestEnroll",
+    "time" : {
+      "start" : 1669202562882,
+      "stop" : 1669202562882,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d78b1476646117c7",
+      "name" : "stdout",
+      "source" : "d78b1476646117c7.txt",
+      "type" : "text/plain",
+      "size" : 148
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestEnroll::0",
+    "time" : {
+      "start" : 1669202615614,
+      "stop" : 1669202617658,
+      "duration" : 2044
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_xunit_setup_class_fixture_TestEnroll::0",
+    "time" : {
+      "start" : 1669202645378,
+      "stop" : 1669202645383,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "user('小马')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test.test_web"
+  }, {
+    "name" : "suite",
+    "value" : "test_enroll"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEnroll"
+  }, {
+    "name" : "host",
+    "value" : "xiaoma"
+  }, {
+    "name" : "thread",
+    "value" : "19648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_web.test_enroll"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "check_code",
+    "value" : "1234"
+  }, {
+    "name" : "email",
+    "value" : "'1915856663@qq.com'"
+  }, {
+    "name" : "expected",
+    "value" : "'昵称格式不正确'"
+  }, {
+    "name" : "nikename",
+    "value" : "123"
+  }, {
+    "name" : "pwd",
+    "value" : "123456"
+  }, {
+    "name" : "repwd",
+    "value" : "123456"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "user('小马')" ]
+  },
+  "source" : "cb27e9b81d0f1adb.json",
+  "parameterValues" : [ "1234", "'1915856663@qq.com'", "'昵称格式不正确'", "123", "123456", "123456" ]
+}

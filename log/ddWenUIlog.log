@@ -1,0 +1,200 @@
+2022-11-23 19:12:59|ERROR   |conftest.py|codeLine:113 |log information:self = <test.test_web.test_enroll.TestEnroll object at 0x000001CBED20E7C0>
+email = '1915856663@qq.com', nikename = 'liaoyudong', pwd = 123456
+repwd = 123456, check_code = 1234, expected1 = '输入您收到邮件中的验证码：'
+expected2 = '欢迎加入当当网'
+
+    @pytest.mark.parametrize("email,nikename,pwd,repwd,check_code,expected1,expected2",
+                             case_data['p_example'])
+    def test_case01_enroll(self, email, nikename, pwd, repwd,
+                           check_code, expected1, expected2):
+        logger.info(email, nikename, pwd, repwd, check_code, expected1, expected2)
+        self.home_proxy.to_enroll()
+        self.enrool_proxy.enroll_user(email, nikename, pwd, repwd, str(check_code)+"\n")
+        time.sleep(2)
+        #点击注册按钮
+        self.enrool_proxy.click_enroll()
+        time.sleep(2)
+        self.enrool_proxy.click_enroll()
+        time.sleep(2)
+>       assert self.enrool_proxy.get_write_in() == expected1
+
+test\test_web\test_enroll.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page\enroll_page.py:126: in get_write_in
+    return self.enroll_handle.get_write_in_info()
+page\enroll_page.py:85: in get_write_in_info
+    return self.get_text(self.enroll_page.find_write_in_info())
+page\enroll_page.py:34: in find_write_in_info
+    return self.get_element(*self.write_in_info)
+base\web\base.py:25: in get_element
+    element = wait.until(lambda x: x.find_element(*location))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <selenium.webdriver.support.wait.WebDriverWait (session="77113d8a43fba97a442a8072e38f8361")>
+method = <function BasePage.get_element.<locals>.<lambda> at 0x000001CBED32DCA0>
+message = ''
+
+    def until(self, method, message=''):
+        """Calls the method provided with the driver as an argument until the \
+        return value does not evaluate to ``False``.
+    
+        :param method: callable(WebDriver)
+        :param message: optional message for :exc:`TimeoutException`
+        :returns: the result of the last call to `method`
+        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs
+        """
+        screen = None
+        stacktrace = None
+    
+        end_time = time.monotonic() + self._timeout
+        while True:
+            try:
+                value = method(self._driver)
+                if value:
+                    return value
+            except InvalidSelectorException as e:
+                raise e
+            except self._ignored_exceptions as exc:
+                screen = getattr(exc, 'screen', None)
+                stacktrace = getattr(exc, 'stacktrace', None)
+            time.sleep(self._poll)
+            if time.monotonic() > end_time:
+                break
+>       raise TimeoutException(message, screen, stacktrace)
+E       selenium.common.exceptions.TimeoutException: Message: 
+E       Stacktrace:
+E       Backtrace:
+E       	Ordinal0 [0x00771ED3+2236115]
+E       	Ordinal0 [0x007092F1+1807089]
+E       	Ordinal0 [0x006166FD+812797]
+E       	Ordinal0 [0x006455DF+1005023]
+E       	Ordinal0 [0x006457CB+1005515]
+E       	Ordinal0 [0x00677632+1209906]
+E       	Ordinal0 [0x00661AD4+1120980]
+E       	Ordinal0 [0x006759E2+1202658]
+E       	Ordinal0 [0x006618A6+1120422]
+E       	Ordinal0 [0x0063A73D+960317]
+E       	Ordinal0 [0x0063B71F+964383]
+E       	GetHandleVerifier [0x00A1E7E2+2743074]
+E       	GetHandleVerifier [0x00A108D4+2685972]
+E       	GetHandleVerifier [0x00802BAA+532202]
+E       	GetHandleVerifier [0x00801990+527568]
+E       	Ordinal0 [0x0071080C+1837068]
+E       	Ordinal0 [0x00714CD8+1854680]
+E       	Ordinal0 [0x00714DC5+1854917]
+E       	Ordinal0 [0x0071ED64+1895780]
+E       	BaseThreadInitThunk [0x75FE6939+25]
+E       	RtlGetFullPathName_UEx [0x77578FD2+1218]
+E       	RtlGetFullPathName_UEx [0x77578F9D+1165]
+
+C:\Python\Python38\lib\site-packages\selenium\webdriver\support\wait.py:89: TimeoutException
+NoneType: None
+2022-11-23 19:19:51|INFO    |my_logging.py|codeLine:22  |log information:123456
+2022-11-23 19:22:44|INFO    |test_enroll.py|codeLine:40  |log information:['1915856663@qq.com', 'liaoyudong', 123456, 123456, 1234, '输入您收到邮件中的验证码：', '欢迎加入当当网']
+2022-11-23 19:23:05|INFO    |test_enroll.py|codeLine:59  |log information:('', 'liaoyudong', 123456, 123456, 1234, 'Email不能为空')
+2022-11-23 19:23:11|INFO    |test_enroll.py|codeLine:59  |log information:('xiaoma@126.com', 'liaoyudong', 123456, 123456, 1234, 'Email已存在')
+2022-11-23 19:23:16|INFO    |test_enroll.py|codeLine:59  |log information:('xiaoma', 'liaoyudong', 123456, 123456, 1234, 'Email格式不正确')
+2022-11-23 19:23:22|INFO    |test_enroll.py|codeLine:59  |log information:('@#@', 'liaoyudong', 123456, 123456, 1234, 'Email格式不正确')
+2022-11-23 19:23:27|INFO    |test_enroll.py|codeLine:68  |log information:('1915856663@qq.com', '', 123456, 123456, 1234, '昵称不能为空')
+2022-11-23 19:23:33|INFO    |test_enroll.py|codeLine:68  |log information:('1915856663@qq.com', 123, 123456, 123456, 1234, '昵称格式不正确')
+2022-11-23 19:23:38|INFO    |test_enroll.py|codeLine:68  |log information:('1915856663@qq.com', 123456789112345678911, 123456, 123456, 1234, '昵称格式不正确')
+2022-11-23 19:23:44|INFO    |test_enroll.py|codeLine:77  |log information:('1915856663@qq.com', 1234, '', 123456, 1234, '密码不能为空')
+2022-11-23 19:23:49|INFO    |test_enroll.py|codeLine:77  |log information:('1915856663@qq.com', 1234, 12345, 123456, 1234, '密码格式不正确')
+2022-11-23 19:23:55|INFO    |test_enroll.py|codeLine:86  |log information:('1915856663@qq.com', 'liaoyudong', 123456, 1234567, 1234, '2次密码不相同')
+2022-11-23 19:24:01|INFO    |test_enroll.py|codeLine:95  |log information:('1915856663@qq.com', 'liaoyudong', 123456, 123456, '', '验证码不能为空')
+2022-11-23 19:24:06|INFO    |test_login.py|codeLine:36  |log information:('xiaoma@126.com', 123456, '登出')
+2022-11-23 19:24:14|INFO    |test_login.py|codeLine:48  |log information:('xiaomazz@126.com', 123456, '用户名或密码错误')
+2022-11-23 19:24:21|INFO    |test_login.py|codeLine:48  |log information:('', 123456, '请填写用户名和密码')
+2022-11-23 19:24:28|INFO    |test_login.py|codeLine:48  |log information:('xiaoma@126.com', '', '请填写用户名和密码')
+2022-11-23 19:24:36|INFO    |test_login.py|codeLine:48  |log information:('xiaoma@126.com', 12345678, '用户名或密码错误')
+2022-11-23 19:24:48|ERROR   |conftest.py|codeLine:113 |log information:self = <test.test_web.test_enroll.TestEnroll object at 0x0000015C83D6A730>
+email = '1915856663@qq.com', nikename = 'liaoyudong', pwd = 123456
+repwd = 123456, check_code = 1234, expected1 = '输入您收到邮件中的验证码：'
+expected2 = '欢迎加入当当网'
+
+    @pytest.mark.parametrize("email,nikename,pwd,repwd,check_code,expected1,expected2",
+                             case_data['p_example'])
+    def test_case01_enroll(self, email, nikename, pwd, repwd,
+                           check_code, expected1, expected2):
+        logger.info([email, nikename, pwd, repwd, check_code, expected1, expected2])
+        self.home_proxy.to_enroll()
+        self.enrool_proxy.enroll_user(email, nikename, pwd, repwd, str(check_code)+"\n")
+        time.sleep(2)
+        #点击注册按钮
+        self.enrool_proxy.click_enroll()
+        time.sleep(2)
+        self.enrool_proxy.click_enroll()
+        time.sleep(2)
+>       assert self.enrool_proxy.get_write_in() == expected1
+
+test\test_web\test_enroll.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page\enroll_page.py:126: in get_write_in
+    return self.enroll_handle.get_write_in_info()
+page\enroll_page.py:85: in get_write_in_info
+    return self.get_text(self.enroll_page.find_write_in_info())
+page\enroll_page.py:34: in find_write_in_info
+    return self.get_element(*self.write_in_info)
+base\web\base.py:25: in get_element
+    element = wait.until(lambda x: x.find_element(*location))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <selenium.webdriver.support.wait.WebDriverWait (session="a924c2ba38b052442c801b27fdf21708")>
+method = <function BasePage.get_element.<locals>.<lambda> at 0x0000015C83DEC9D0>
+message = ''
+
+    def until(self, method, message=''):
+        """Calls the method provided with the driver as an argument until the \
+        return value does not evaluate to ``False``.
+    
+        :param method: callable(WebDriver)
+        :param message: optional message for :exc:`TimeoutException`
+        :returns: the result of the last call to `method`
+        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs
+        """
+        screen = None
+        stacktrace = None
+    
+        end_time = time.monotonic() + self._timeout
+        while True:
+            try:
+                value = method(self._driver)
+                if value:
+                    return value
+            except InvalidSelectorException as e:
+                raise e
+            except self._ignored_exceptions as exc:
+                screen = getattr(exc, 'screen', None)
+                stacktrace = getattr(exc, 'stacktrace', None)
+            time.sleep(self._poll)
+            if time.monotonic() > end_time:
+                break
+>       raise TimeoutException(message, screen, stacktrace)
+E       selenium.common.exceptions.TimeoutException: Message: 
+E       Stacktrace:
+E       Backtrace:
+E       	Ordinal0 [0x00771ED3+2236115]
+E       	Ordinal0 [0x007092F1+1807089]
+E       	Ordinal0 [0x006166FD+812797]
+E       	Ordinal0 [0x006455DF+1005023]
+E       	Ordinal0 [0x006457CB+1005515]
+E       	Ordinal0 [0x00677632+1209906]
+E       	Ordinal0 [0x00661AD4+1120980]
+E       	Ordinal0 [0x006759E2+1202658]
+E       	Ordinal0 [0x006618A6+1120422]
+E       	Ordinal0 [0x0063A73D+960317]
+E       	Ordinal0 [0x0063B71F+964383]
+E       	GetHandleVerifier [0x00A1E7E2+2743074]
+E       	GetHandleVerifier [0x00A108D4+2685972]
+E       	GetHandleVerifier [0x00802BAA+532202]
+E       	GetHandleVerifier [0x00801990+527568]
+E       	Ordinal0 [0x0071080C+1837068]
+E       	Ordinal0 [0x00714CD8+1854680]
+E       	Ordinal0 [0x00714DC5+1854917]
+E       	Ordinal0 [0x0071ED64+1895780]
+E       	BaseThreadInitThunk [0x75FE6939+25]
+E       	RtlGetFullPathName_UEx [0x77578FD2+1218]
+E       	RtlGetFullPathName_UEx [0x77578F9D+1165]
+
+C:\Python\Python38\lib\site-packages\selenium\webdriver\support\wait.py:89: TimeoutException
+NoneType: None

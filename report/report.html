@@ -429,39 +429,12 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 21-Nov-2022 at 02:40:36 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 23-Nov-2022 at 19:24:48 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
-        <td>BUILD_ID</td>
-        <td>8</td></tr>
-      <tr>
-        <td>BUILD_NUMBER</td>
-        <td>8</td></tr>
-      <tr>
-        <td>BUILD_TAG</td>
-        <td>jenkins-dangdang_automate-8</td></tr>
-      <tr>
-        <td>BUILD_URL</td>
-        <td><a href="http://localhost:8081/job/dangdang_automate/8/" target="_blank">http://localhost:8081/job/dangdang_automate/8/</a></td></tr>
-      <tr>
-        <td>CI</td>
-        <td>true</td></tr>
-      <tr>
-        <td>EXECUTOR_NUMBER</td>
-        <td>0</td></tr>
-      <tr>
         <td>JAVA_HOME</td>
         <td>D:\Program Files\Java\jdk1.8.0_221</td></tr>
-      <tr>
-        <td>JENKINS_URL</td>
-        <td><a href="http://localhost:8081/" target="_blank">http://localhost:8081/</a></td></tr>
-      <tr>
-        <td>JOB_NAME</td>
-        <td>dangdang_automate</td></tr>
-      <tr>
-        <td>NODE_NAME</td>
-        <td>built-in</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "1.0.0", "py": "1.11.0", "pytest": "7.1.2"}</td></tr>
@@ -473,13 +446,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>{"allure-pytest": "2.11.1", "cov": "4.0.0", "html": "3.1.1", "metadata": "2.0.1", "ordering": "0.6", "rerunfailures": "10.2", "xdist": "3.0.2"}</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.8.5</td></tr>
-      <tr>
-        <td>WORKSPACE</td>
-        <td>C:\Users\19158\.jenkins\workspace\dangdang_automate</td></tr></table>
+        <td>3.8.5</td></tr></table>
     <h2>Summary</h2>
-    <p>18 tests ran in 117.88 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">18 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>18 tests ran in 125.18 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">17 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -490,177 +460,194 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_case01_enroll[1915856663@qq.com-liaoyudong-123456-123456-1234-输入您收到邮件中的验证码：-欢迎加入当当网]</td>
-          <td class="col-duration">13.67</td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_case01_enroll[1915856663@qq.com-liaoyudong-123456-123456-1234-è¾å¥æ¨æ¶å°é®ä»¶ä¸­çéªè¯ç ï¼-æ¬¢è¿å å¥å½å½ç½]</td>
+          <td class="col-duration">21.60</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log">self = &lt;test.test_web.test_enroll.TestEnroll object at 0x0000015C83D6A730&gt;<br/>email = &#x27;1915856663@qq.com&#x27;, nikename = &#x27;liaoyudong&#x27;, pwd = 123456<br/>repwd = 123456, check_code = 1234, expected1 = &#x27;输入您收到邮件中的验证码：&#x27;<br/>expected2 = &#x27;欢迎加入当当网&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;email,nikename,pwd,repwd,check_code,expected1,expected2&quot;,<br/>                             case_data[&#x27;p_example&#x27;])<br/>    def test_case01_enroll(self, email, nikename, pwd, repwd,<br/>                           check_code, expected1, expected2):<br/>        logger.info([email, nikename, pwd, repwd, check_code, expected1, expected2])<br/>        self.home_proxy.to_enroll()<br/>        self.enrool_proxy.enroll_user(email, nikename, pwd, repwd, str(check_code)+&quot;\n&quot;)<br/>        time.sleep(2)<br/>        #点击注册按钮<br/>        self.enrool_proxy.click_enroll()<br/>        time.sleep(2)<br/>        self.enrool_proxy.click_enroll()<br/>        time.sleep(2)<br/>&gt;       assert self.enrool_proxy.get_write_in() == expected1<br/><br/>test\test_web\test_enroll.py:49: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>page\enroll_page.py:126: in get_write_in<br/>    return self.enroll_handle.get_write_in_info()<br/>page\enroll_page.py:85: in get_write_in_info<br/>    return self.get_text(self.enroll_page.find_write_in_info())<br/>page\enroll_page.py:34: in find_write_in_info<br/>    return self.get_element(*self.write_in_info)<br/>base\web\base.py:25: in get_element<br/>    element = wait.until(lambda x: x.find_element(*location))<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;selenium.webdriver.support.wait.WebDriverWait (session=&quot;a924c2ba38b052442c801b27fdf21708&quot;)&gt;<br/>method = &lt;function BasePage.get_element.&lt;locals&gt;.&lt;lambda&gt; at 0x0000015C83DEC9D0&gt;<br/>message = &#x27;&#x27;<br/><br/>    def until(self, method, message=&#x27;&#x27;):<br/>        &quot;&quot;&quot;Calls the method provided with the driver as an argument until the \<br/>        return value does not evaluate to ``False``.<br/>    <br/>        :param method: callable(WebDriver)<br/>        :param message: optional message for :exc:`TimeoutException`<br/>        :returns: the result of the last call to `method`<br/>        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs<br/>        &quot;&quot;&quot;<br/>        screen = None<br/>        stacktrace = None<br/>    <br/>        end_time = time.monotonic() + self._timeout<br/>        while True:<br/>            try:<br/>                value = method(self._driver)<br/>                if value:<br/>                    return value<br/>            except InvalidSelectorException as e:<br/>                raise e<br/>            except self._ignored_exceptions as exc:<br/>                screen = getattr(exc, &#x27;screen&#x27;, None)<br/>                stacktrace = getattr(exc, &#x27;stacktrace&#x27;, None)<br/>            time.sleep(self._poll)<br/>            if time.monotonic() &gt; end_time:<br/>                break<br/>&gt;       raise TimeoutException(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.TimeoutException: Message: </span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       Backtrace:</span><br/><span class="error">E       	Ordinal0 [0x00771ED3+2236115]</span><br/><span class="error">E       	Ordinal0 [0x007092F1+1807089]</span><br/><span class="error">E       	Ordinal0 [0x006166FD+812797]</span><br/><span class="error">E       	Ordinal0 [0x006455DF+1005023]</span><br/><span class="error">E       	Ordinal0 [0x006457CB+1005515]</span><br/><span class="error">E       	Ordinal0 [0x00677632+1209906]</span><br/><span class="error">E       	Ordinal0 [0x00661AD4+1120980]</span><br/><span class="error">E       	Ordinal0 [0x006759E2+1202658]</span><br/><span class="error">E       	Ordinal0 [0x006618A6+1120422]</span><br/><span class="error">E       	Ordinal0 [0x0063A73D+960317]</span><br/><span class="error">E       	Ordinal0 [0x0063B71F+964383]</span><br/><span class="error">E       	GetHandleVerifier [0x00A1E7E2+2743074]</span><br/><span class="error">E       	GetHandleVerifier [0x00A108D4+2685972]</span><br/><span class="error">E       	GetHandleVerifier [0x00802BAA+532202]</span><br/><span class="error">E       	GetHandleVerifier [0x00801990+527568]</span><br/><span class="error">E       	Ordinal0 [0x0071080C+1837068]</span><br/><span class="error">E       	Ordinal0 [0x00714CD8+1854680]</span><br/><span class="error">E       	Ordinal0 [0x00714DC5+1854917]</span><br/><span class="error">E       	Ordinal0 [0x0071ED64+1895780]</span><br/><span class="error">E       	BaseThreadInitThunk [0x75FE6939+25]</span><br/><span class="error">E       	RtlGetFullPathName_UEx [0x77578FD2+1218]</span><br/><span class="error">E       	RtlGetFullPathName_UEx [0x77578F9D+1165]</span><br/><br/>C:\Python\Python38\lib\site-packages\selenium\webdriver\support\wait.py:89: TimeoutException<br/> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:22:44|INFO    |test_enroll.py|codeLine:40  |log information:[&#x27;1915856663@qq.com&#x27;, &#x27;liaoyudong&#x27;, 123456, 123456, 1234, &#x27;输入您收到邮件中的验证码：&#x27;, &#x27;欢迎加入当当网&#x27;]
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[-liaoyudong-123456-123456-1234-Email不能为空]</td>
-          <td class="col-duration">5.52</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[-liaoyudong-123456-123456-1234-Emailä¸è½ä¸ºç©º]</td>
+          <td class="col-duration">5.51</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:05|INFO    |test_enroll.py|codeLine:59  |log information:(&#x27;&#x27;, &#x27;liaoyudong&#x27;, 123456, 123456, 1234, &#x27;Email不能为空&#x27;)
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[xiaoma@126.com-liaoyudong-123456-123456-1234-Email已存在]</td>
-          <td class="col-duration">5.58</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[xiaoma@126.com-liaoyudong-123456-123456-1234-Emailå·²å­å¨]</td>
+          <td class="col-duration">5.49</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:11|INFO    |test_enroll.py|codeLine:59  |log information:(&#x27;xiaoma@126.com&#x27;, &#x27;liaoyudong&#x27;, 123456, 123456, 1234, &#x27;Email已存在&#x27;)
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[xiaoma-liaoyudong-123456-123456-1234-Email格式不正确]</td>
-          <td class="col-duration">5.54</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[@#@-liaoyudong-123456-123456-1234-Email格式不正确]</td>
-          <td class="col-duration">5.55</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_nikename_err_enroll[1915856663@qq.com--123456-123456-1234-昵称不能为空]</td>
-          <td class="col-duration">5.59</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_nikename_err_enroll[1915856663@qq.com-123-123456-123456-1234-昵称格式不正确]</td>
-          <td class="col-duration">5.53</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_nikename_err_enroll[1915856663@qq.com-123456789112345678911-123456-123456-1234-昵称格式不正确]</td>
-          <td class="col-duration">5.58</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_pwd_err_example[1915856663@qq.com-1234--123456-1234-密码不能为空]</td>
-          <td class="col-duration">5.53</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_pwd_err_example[1915856663@qq.com-1234-12345-123456-1234-密码格式不正确]</td>
-          <td class="col-duration">5.57</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_repwd_err_example[1915856663@qq.com-liaoyudong-123456-1234567-1234-2次密码不相同]</td>
-          <td class="col-duration">5.53</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_check_code_err_example[1915856663@qq.com-liaoyudong-123456-123456--验证码不能为空]</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[xiaoma-liaoyudong-123456-123456-1234-Emailæ ¼å¼ä¸æ­£ç¡®]</td>
           <td class="col-duration">5.50</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ----------------------------Captured stdout teardown---------------------------- <br/>DELETE FROM `dang`.`d_user` WHERE email=+&#x27;1915856663@qq.com&#x27;
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:16|INFO    |test_enroll.py|codeLine:59  |log information:(&#x27;xiaoma&#x27;, &#x27;liaoyudong&#x27;, 123456, 123456, 1234, &#x27;Email格式不正确&#x27;)
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_email_err_enroll[@#@-liaoyudong-123456-123456-1234-Emailæ ¼å¼ä¸æ­£ç¡®]</td>
+          <td class="col-duration">5.50</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:22|INFO    |test_enroll.py|codeLine:59  |log information:(&#x27;@#@&#x27;, &#x27;liaoyudong&#x27;, 123456, 123456, 1234, &#x27;Email格式不正确&#x27;)
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_nikename_err_enroll[1915856663@qq.com--123456-123456-1234-æµç§°ä¸è½ä¸ºç©º]</td>
+          <td class="col-duration">5.52</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:27|INFO    |test_enroll.py|codeLine:68  |log information:(&#x27;1915856663@qq.com&#x27;, &#x27;&#x27;, 123456, 123456, 1234, &#x27;昵称不能为空&#x27;)
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_nikename_err_enroll[1915856663@qq.com-123-123456-123456-1234-æµç§°æ ¼å¼ä¸æ­£ç¡®]</td>
+          <td class="col-duration">5.51</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:33|INFO    |test_enroll.py|codeLine:68  |log information:(&#x27;1915856663@qq.com&#x27;, 123, 123456, 123456, 1234, &#x27;昵称格式不正确&#x27;)
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_nikename_err_enroll[1915856663@qq.com-123456789112345678911-123456-123456-1234-æµç§°æ ¼å¼ä¸æ­£ç¡®]</td>
+          <td class="col-duration">5.55</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:38|INFO    |test_enroll.py|codeLine:68  |log information:(&#x27;1915856663@qq.com&#x27;, 123456789112345678911, 123456, 123456, 1234, &#x27;昵称格式不正确&#x27;)
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_pwd_err_example[1915856663@qq.com-1234--123456-1234-å¯ç ä¸è½ä¸ºç©º]</td>
+          <td class="col-duration">5.50</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:44|INFO    |test_enroll.py|codeLine:77  |log information:(&#x27;1915856663@qq.com&#x27;, 1234, &#x27;&#x27;, 123456, 1234, &#x27;密码不能为空&#x27;)
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_pwd_err_example[1915856663@qq.com-1234-12345-123456-1234-å¯ç æ ¼å¼ä¸æ­£ç¡®]</td>
+          <td class="col-duration">5.55</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:49|INFO    |test_enroll.py|codeLine:77  |log information:(&#x27;1915856663@qq.com&#x27;, 1234, 12345, 123456, 1234, &#x27;密码格式不正确&#x27;)
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_repwd_err_example[1915856663@qq.com-liaoyudong-123456-1234567-1234-2æ¬¡å¯ç ä¸ç¸å]</td>
+          <td class="col-duration">5.52</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:23:55|INFO    |test_enroll.py|codeLine:86  |log information:(&#x27;1915856663@qq.com&#x27;, &#x27;liaoyudong&#x27;, 123456, 1234567, 1234, &#x27;2次密码不相同&#x27;)
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_enroll.py::TestEnroll::test_check_code_err_example[1915856663@qq.com-liaoyudong-123456-123456--éªè¯ç ä¸è½ä¸ºç©º]</td>
+          <td class="col-duration">5.52</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:24:01|INFO    |test_enroll.py|codeLine:95  |log information:(&#x27;1915856663@qq.com&#x27;, &#x27;liaoyudong&#x27;, 123456, 123456, &#x27;&#x27;, &#x27;验证码不能为空&#x27;)
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>DELETE FROM `dang`.`d_user` WHERE email=+&#x27;1915856663@qq.com&#x27;
 删除成功
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_login.py::Test_Login::test_01_login[xiaoma@126.com-123456-登出]</td>
-          <td class="col-duration">7.52</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
-<br/> ------------------------------Captured stdout call------------------------------ <br/>xiaoma@126.com 123456 登出
-<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaomazz@126.com-123456-用户名或密码错误]</td>
-          <td class="col-duration">7.47</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
-<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[-123456-请填写用户名和密码]</td>
-          <td class="col-duration">7.44</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
-<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com--请填写用户名和密码]</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_01_login[xiaoma@126.com-123456-ç»åº]</td>
           <td class="col-duration">7.46</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:24:06|INFO    |test_login.py|codeLine:36  |log information:(&#x27;xiaoma@126.com&#x27;, 123456, &#x27;登出&#x27;)
+xiaoma@126.com 123456 登出
 <br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com-12345678-用户名或密码错误]</td>
-          <td class="col-duration">7.57</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaomazz@126.com-123456-ç¨æ·åæå¯ç éè¯¯]</td>
+          <td class="col-duration">7.46</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:24:14|INFO    |test_login.py|codeLine:48  |log information:(&#x27;xiaomazz@126.com&#x27;, 123456, &#x27;用户名或密码错误&#x27;)
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[-123456-è¯·å¡«åç¨æ·ååå¯ç ]</td>
+          <td class="col-duration">7.42</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:24:21|INFO    |test_login.py|codeLine:48  |log information:(&#x27;&#x27;, 123456, &#x27;请填写用户名和密码&#x27;)
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com--è¯·å¡«åç¨æ·ååå¯ç ]</td>
+          <td class="col-duration">7.42</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:24:28|INFO    |test_login.py|codeLine:48  |log information:(&#x27;xiaoma@126.com&#x27;, &#x27;&#x27;, &#x27;请填写用户名和密码&#x27;)
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_web/test_login.py::Test_Login::test_02_login[xiaoma@126.com-12345678-ç¨æ·åæå¯ç éè¯¯]</td>
+          <td class="col-duration">7.47</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>登入流程测试用例开始执行==========&gt;
+<br/> ------------------------------Captured stdout call------------------------------ <br/>2022-11-23 19:24:36|INFO    |test_login.py|codeLine:48  |log information:(&#x27;xiaoma@126.com&#x27;, 12345678, &#x27;用户名或密码错误&#x27;)
 <br/> ----------------------------Captured stdout teardown---------------------------- <br/>环境初始化=============&gt;
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_web/test_to_login.py::Test_HomePage::test_to_login</td>
-          <td class="col-duration">5.39</td>
+          <td class="col-duration">5.33</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
